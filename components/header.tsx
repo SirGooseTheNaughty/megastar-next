@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Language } from "./language";
 
-export const Header = async ({ events = [], albums = [], t }: { events: any[], albums: any[], t: Function }) => {
+export const Header = async ({ events = [], albums = [], t, locale }: { events: any[], albums: any[], t: Function, locale?: string }) => {
     const MenuItem = ({ title, link, children }: any) => (
         <div className="relative group">
             <a href={link} className="flex h-full items-center gap-2 uppercase text-lg">
@@ -18,7 +19,7 @@ export const Header = async ({ events = [], albums = [], t }: { events: any[], a
     );
 
     return (
-        <header className="flex justify-between relative w-full h-32">
+        <header className="flex justify-around relative w-full h-32">
             <Link href="/" className="h-full block">
                 <Image
                     src="/header_logo.png"
@@ -39,15 +40,15 @@ export const Header = async ({ events = [], albums = [], t }: { events: any[], a
                 <MenuItem title='videos' link='#videos'></MenuItem>
                 <MenuItem title='contacts' link='#contacts'></MenuItem>
             </nav>
-            <div id="language">
-                <Link href="/">EN</Link>
-                <Link href="/ru">RU</Link>
+            <div className="hidden md:flex items-center justify-center gap-2 text-lg">
+                <Language locale={locale} language={'en'} isDefault />
+                <Language locale={locale} language={'ru'} />
             </div>
         </header>
     );
 };
 
-const MenuDropdownItem = ({ link, text }) => (
+const MenuDropdownItem = ({ link, text }: any) => (
     <li className="truncate">
         <a href={link}>{text}</a>
     </li>
