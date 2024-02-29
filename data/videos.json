@@ -1,0 +1,335 @@
+[
+  {
+    "id": "vdnh_2023_vid",
+    "cover": "posters/vdnh_2023.png",
+    "description": {
+      "ru": "Санкт-Петербург на международной выставке «Россия»",
+      "en": "St. Petersburg at the “Russia” exhibition"
+    },
+    "vid": "vdnh_2023.mp4"
+  },
+  {
+    "id": "wonder_of_light_2023_vid",
+    "cover": "posters/wonder_of_light_2023.png",
+    "description": {
+      "ru": "«Чудо Света» 2023",
+      "en": "“Wonder of Light” 2023"
+    },
+    "vid": "wonder_of_light_2023.mp4"
+  },
+  {
+    "id": "sup_2023_vid",
+    "cover": "posters/sup_2023.png",
+    "description": { "ru": "SUP-Фонтанка 2023", "en": "SUP-Fontanka 2023" },
+    "vid": "sup_2023.mp4"
+  },
+  {
+    "id": "kronshbal_2023_vid",
+    "cover": "posters/kronshbal_2023.png",
+    "description": {
+      "ru": "Кронштадтский бал 2023",
+      "en": "Kronstadt Ball 2023"
+    },
+    "vid": "kronshbal_2023.mp4"
+  },
+  {
+    "id": "flower_fest_2023_vid",
+    "cover": "posters/flower_fest_2023.png",
+    "description": {
+      "ru": "Международный Фестиваль цветов 2023",
+      "en": "International Flower Festival 2023"
+    },
+    "vid": "flower_fest_2023.mp4"
+  },
+  {
+    "id": "orchestra_2023_vid",
+    "cover": "posters/orchestra_2023.png",
+    "description": {
+      "ru": "Международный фестиваль духовых оркестров 2023",
+      "en": "International Brass Band Festival 2023"
+    },
+    "vid": "orchestra_2023.mp4"
+  },
+  {
+    "id": "fire_fest_2023_vid",
+    "cover": "posters/fire_fest_2023.png",
+    "description": {
+      "ru": "Петровский Фестиваль огня 2023",
+      "en": "Fire Festival 2023"
+    },
+    "vid": "fire_fest_2023.mp4"
+  },
+  {
+    "id": "kronshled_2023_vid",
+    "cover": "posters/kronshled_2023_cover.png",
+    "description": { "ru": "«КроншЛЁД» 2023", "en": "“KronshLED” 2023" },
+    "vid": "kronshled_2023.mp4"
+  },
+  {
+    "id": "wonder_of_light_2022_vid",
+    "cover": "posters/wonder_of_light_2022_cover.png",
+    "description": {
+      "ru": "«Чудо Света» 2022 Петропавловская крепость",
+      "en": "“Wonder of Light” 2022 Peter and Paul Fortress"
+    },
+    "vid": "wonder_of_light_2022.mp4"
+  },
+  {
+    "id": "water_fest_2022_vid",
+    "cover": "posters/water_fest_2022_cover.png",
+    "description": { "ru": "Водный фестиваль 2022", "en": "Water Fest 2022" },
+    "vid": "water_fest_2022.mp4"
+  },
+  {
+    "id": "flower_fest_2022_vid",
+    "cover": "posters/flower_fest_2022.png",
+    "description": {
+      "ru": "Международный Фестиваль цветов 2022",
+      "en": "International Flower Festival 2022"
+    },
+    "vid": "flower_fest_2022.mp4"
+  },
+  {
+    "id": "fire_fest_2022_vid",
+    "cover": "posters/fire_fest_2022_cover.png",
+    "description": {
+      "ru": "Петровский Фестиваль огня 2022",
+      "en": "Fire Festival 2022"
+    },
+    "vid": "fire_fest_2022.mp4"
+  },
+  {
+    "id": "wonder_of_light_2021_vid",
+    "cover": "posters/wonder_of_light_2021.png",
+    "description": {
+      "ru": "«Чудо Света» 2021 <br>Петропавловская крепость",
+      "en": "“Wonder of Light” 2021<br>Peter and Paul Fortress"
+    },
+    "vid": "wonder_of_light_2021.mp4"
+  },
+  {
+    "id": "IDJazz_2021_vid",
+    "cover": "posters/IDJazz_2021.png",
+    "description": { "ru": "IDJazz SPb ", "en": "IDJazz SPb " },
+    "vid": "IDJazz_2021.mp4"
+  },
+  {
+    "id": "star_of_hope_2021_vid",
+    "cover": "posters/star_of_hope_2021.png",
+    "description": {
+      "ru": "Фестиваль<br>«Звезда Надежды» 2021",
+      "en": "“Star of Hope” Festival 2021"
+    },
+    "vid": "star_of_hope.mp4"
+  },
+  {
+    "id": "theremin_fest_2021_vid",
+    "cover": "posters/theremin_fest_2021.png",
+    "description": { "ru": "Theremin Fest 2021", "en": "Theremin Fest 2021" },
+    "vid": "theremin_fest_2021.mp4"
+  },
+  {
+    "id": "flower_fest_2021_vid",
+    "cover": "posters/flower_fest_2021.png",
+    "description": {
+      "ru": "Международный Фестиваль цветов 2021",
+      "en": "International Flower Festival 2021"
+    },
+    "vid": "flower_fest_2021.mp4"
+  },
+  {
+    "id": "sup_2021_vid",
+    "cover": "posters/sup_2021_poster.png",
+    "description": { "ru": "SUP-Фонтанка 2021", "en": "SUP-Fontanka 2021" },
+    "vid": "sup_2021.mp4"
+  },
+  {
+    "id": "kids_show_vid",
+    "cover": "projects/kids_show.jpg",
+    "description": {
+      "ru": "Детское шоу на льду @MAZE",
+      "en": "Kids Show on Ice @MAZE"
+    },
+    "vid": "kids_show.mp4"
+  },
+  {
+    "id": "christmas_star_fire_fest_2021_vid",
+    "cover": "posters/christmas_star_fire_fest_2021.png",
+    "description": {
+      "ru": "Фестиваль огня «Рождественская Звезда» 2021",
+      "en": "“Christmas Star” <br>Fire Festival 2021"
+    },
+    "vid": "christmas_star_fire_fest_2021.mp4"
+  },
+  {
+    "id": "wonder_of_light_vid",
+    "cover": "posters/wonder_of_light_2020.png",
+    "description": {
+      "ru": "«Чудо Света» 2020 <br>Петропавловская крепость",
+      "en": "“Wonder of Light” 2020<br>Peter and Paul Fortress"
+    },
+    "vid": "wonder_of_light_2020.mp4"
+  },
+  {
+    "id": "drones_2020_vid",
+    "cover": "posters/drones_2020.png",
+    "description": {
+      "ru": "«Чудо Света» 2020 <br>Шоу дронов",
+      "en": "“Wonder of Light” 2020<br>Drone Show"
+    },
+    "vid": "drones_2020.mp4"
+  },
+  {
+    "id": "theremin_fest_2020_vid",
+    "cover": "posters/theremin_2020.png",
+    "description": { "ru": "Theremin Fest", "en": "Theremin Fest" },
+    "vid": "theremin_2020.mp4"
+  },
+  {
+    "id": "flower_fest_2020_vid",
+    "cover": "posters/flower_fest_2020.png",
+    "description": {
+      "ru": "Международный Фестиваль цветов 2020",
+      "en": "International Flower Festival 2020"
+    },
+    "vid": "flower_fest_2020.mp4"
+  },
+  {
+    "id": "sup_2020_vid",
+    "cover": "posters/sup_2020.png",
+    "description": { "ru": "SUP-Фонтанка 2020", "en": "SUP-Fontanka 2020" },
+    "vid": "sup_2020.mp4"
+  },
+  {
+    "id": "IDJazz_2020_vid",
+    "cover": "posters/IDJazz_2020.png",
+    "description": { "ru": "IDJazz SPb ", "en": "IDJazz SPb " },
+    "vid": "IDJazz_2020.mp4"
+  },
+  {
+    "id": "russia_day_vid",
+    "cover": "posters/russia_day.png",
+    "description": { "ru": "День России 2020", "en": "Russia Day 2020" },
+    "vid": "russia.mp4"
+  },
+  {
+    "id": "petersburg317_vid",
+    "cover": "posters/city_day_video.png",
+    "description": { "ru": "#Петербург317", "en": "#Petersburg317" },
+    "vid": "city_day_video.mp4"
+  },
+  {
+    "id": "maslenitsa_vid",
+    "cover": "posters/maslenitsa.png",
+    "description": { "ru": "МАСЛЕНИЦА 2.0", "en": "MASLENITSA 2.0" },
+    "vid": "maslenitsa.mp4"
+  },
+  {
+    "id": "christmas_star_fire_fest_2020_vid",
+    "cover": "posters/christmas_star_fire_fest_2020.png",
+    "description": {
+      "ru": "Фестиваль огня «Рождественская Звезда» 2020",
+      "en": "“Christmas Star” <br>Fire Festival 2020"
+    },
+    "vid": "christmas_star_fire_fest_2020.mp4"
+  },
+  {
+    "id": "new_year_vid",
+    "cover": "posters/new_year.png",
+    "description": {
+      "ru": "Новый год на Дворцовой площади",
+      "en": "New Year in Palace Square"
+    },
+    "vid": "new_year.mp4"
+  },
+  {
+    "id": "ded_moroz_vid",
+    "cover": "posters/ded_moroz.png",
+    "description": {
+      "ru": "Встреча Всероссийского<br>Деда Мороза",
+      "en": "Meeting of Ded Moroz"
+    },
+    "vid": "ded_moroz.mp4"
+  },
+  {
+    "id": "wonder_of_light_fall_vid",
+    "cover": "posters/wonder_of_light_fall.png",
+    "description": {
+      "ru": "«Чудо Света» 2019 <br>Дворцовая площадь",
+      "en": "Wonder of Light 2019 <br>Palace Square"
+    },
+    "vid": "wonder_of_light_fall.mp4"
+  },
+  {
+    "id": "sup_vid",
+    "cover": "posters/sup_2019.png",
+    "description": { "ru": "SUP-Фонтанка 2019", "en": " SUP-Fontanka 2019" },
+    "vid": "sup.mp4"
+  },
+  {
+    "id": "flower_fest_vid",
+    "cover": "posters/flower_fest_2019.png",
+    "description": {
+      "ru": "Международный Фестиваль цветов 2019",
+      "en": "International <br>Flower Festival 2019"
+    },
+    "vid": "flower_fest.mp4"
+  },
+  {
+    "id": "peter_sanctus_vid",
+    "cover": "posters/peter_sanctus.png",
+    "description": { "ru": "Peter Sanctus", "en": "Peter Sanctus" },
+    "vid": "peter_sanctus.mp4"
+  },
+  {
+    "id": "city_day_vid",
+    "cover": "posters/city_day.png",
+    "description": {
+      "ru": "День Города<br>Праздник на Невском",
+      "en": "City Day. Festival on Nevsky prospect"
+    },
+    "vid": "city_day.mp4"
+  },
+  {
+    "id": "wonder_of_light_spring_vid",
+    "cover": "posters/wonder_of_light_spring.png",
+    "description": {
+      "ru": "«Чудо Света» 2019 <br>ТЮЗ",
+      "en": "Wonder of Light 2019 <br>The A.Bryantsev Youth Theatre"
+    },
+    "vid": "wonder_of_light_spring.mp4"
+  },
+  {
+    "id": "siege_panorama_vid",
+    "cover": "posters/siege_panorama.png",
+    "description": { "ru": "Панорама Блокады", "en": "The Siege Panorama" },
+    "vid": "siege_panorama.mp4"
+  },
+  {
+    "id": "christmas_star_fire_fest_2019_vid",
+    "cover": "posters/christmas_star_fire_fest_2019.png",
+    "description": {
+      "ru": "Фестиваль Огня «Рождественская Звезда» 2019",
+      "en": "Christmas Star <br>Fire Festival 2019"
+    },
+    "vid": "christmas_star_fire_fest.mp4"
+  },
+  {
+    "id": "aurora_vid",
+    "cover": "posters/aurora.png",
+    "description": { "ru": "Аврора 17", "en": "Aurora 17" },
+    "vid": "aurora.mp4"
+  },
+  {
+    "id": "ice_opera_vid",
+    "cover": "posters/ice_opera.png",
+    "description": { "ru": "Ice Opera", "en": "Ice Opera" },
+    "vid": "ice_opera.mp4"
+  },
+  {
+    "id": "show_opera_vid",
+    "cover": "posters/show_opera.png",
+    "description": { "ru": "Show Opera", "en": "Show Opera" },
+    "vid": "show_opera.mp4"
+  }
+]

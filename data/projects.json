@@ -1,0 +1,79 @@
+[
+  {
+    "id": "show_opera",
+    "albums": [
+      { "label": "2020", "id": "show_opera_2020" },
+      { "label": "2019", "id": "show_opera_2019" },
+      { "label": "2018", "id": "show_opera_2018" },
+      { "label": "2017", "id": "show_opera_2017" }
+    ],
+    "exlinks": [
+      { "app": "vk", "link": "" },
+      { "app": "web", "link": "" }
+    ],
+    "cover": {
+      "ru": "projects/show_opera.jpg",
+      "en": "projects/show_opera.jpg"
+    },
+    "description": { "ru": "Show Opera", "en": "Show Opera" },
+    "date": { "ru": "", "en": "" },
+    "vid": "videos/show_opera.mp4"
+  },
+  {
+    "id": "chorus",
+    "albums": [{ "label": "", "id": "chorus_" }],
+    "exlinks": [{ "app": "", "link": "" }],
+    "cover": {
+      "ru": "projects/chorus.jpg",
+      "en": "projects/chorus.jpg"
+    },
+    "description": {
+      "ru": "Ансамбль песни и пляски Западного Военного округа",
+      "en": "St.Petersburg Chorus & Dance Ensemble of Russian Army"
+    },
+    "date": { "ru": "", "en": "" },
+    "vid": ""
+  },
+  {
+    "id": "ballet",
+    "albums": [{ "label": "", "id": "ballet_" }],
+    "exlinks": [{ "app": "", "link": "" }],
+    "cover": {
+      "ru": "projects/ballet.png",
+      "en": "projects/ballet.png"
+    },
+    "description": {
+      "ru": "Императорский балет Санкт-Петербурга",
+      "en": "St.Petersburg Imperial Ballet"
+    },
+    "date": { "ru": "", "en": "" },
+    "vid": ""
+  },
+  {
+    "id": "ice_opera",
+    "albums": [{ "label": "2021", "id": "ice_opera_2021" }],
+    "exlinks": [{ "app": "", "link": "" }],
+    "cover": {
+      "ru": "projects/ice_opera.jpg",
+      "en": "projects/ice_opera.jpg"
+    },
+    "description": { "ru": "Ice Opera", "en": "Ice Opera" },
+    "date": { "ru": "", "en": "" },
+    "vid": "videos/ice_opera.mp4"
+  },
+  {
+    "id": "kids_show",
+    "albums": [{ "label": "2021", "id": "kids_show_2021" }],
+    "exlinks": [{ "app": "", "link": "" }],
+    "cover": {
+      "ru": "projects/kids_show.jpg",
+      "en": "projects/kids_show.jpg"
+    },
+    "description": {
+      "ru": "Детское шоу на льду @MAZE",
+      "en": "Kids Show on Ice @MAZE"
+    },
+    "date": { "ru": "", "en": "" },
+    "vid": "videos/kids_show.mp4"
+  }
+]

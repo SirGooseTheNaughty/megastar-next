@@ -25,23 +25,23 @@
     ],
     "exlinks": [
       {
-        "label": "vk",
+        "app": "vk",
         "link": "https://vk.com/chudo_sveta_spb"
       }
     ],
     "cover": {
-      "ru": "images/events/wonder_of_light_fall.jpg",
-      "en": "images/events/wonder_of_light_eng.jpg"
+      "ru": "events/wonder_of_light_fall.jpg",
+      "en": "events/wonder_of_light_eng.jpg"
     },
     "description": {
       "ru": "Фестиваль «Чудо Света»",
       "en": "“Wonder of Light” Festival"
     },
-    "month": {
+    "date": {
       "ru": "Ноябрь",
       "en": "November"
     },
-    "vid": "videos/wonder_of_light_2023.mp4"
+    "vid": "wonder_of_light_2023.mp4"
   },
   {
     "id": "christmas_star_fire_fest",
@@ -52,17 +52,17 @@
       { "label": "2019", "id": "christmas_star_fire_fest_2019" },
       { "label": "2018", "id": "christmas_star_fire_fest_2018" }
     ],
-    "exlinks": [{ "label": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "" }],
     "cover": {
-      "ru": "images/events/fire_fest.jpg",
-      "en": "images/events/fire_fest_eng.jpg"
+      "ru": "events/fire_fest.jpg",
+      "en": "events/fire_fest_eng.jpg"
     },
     "description": {
       "ru": "Фестиваль Огня «Рождественская Звезда»",
       "en": "“Christmas Star” Fire Festival"
     },
     "date": { "ru": "Январь", "en": "January" },
-    "vid": "videos/fire_fest_2023.mp4"
+    "vid": "fire_fest_2023.mp4"
   },
   {
     "id": "flower_fest",
@@ -74,17 +74,17 @@
       { "label": "2019", "id": "flower_fest_2019" },
       { "label": "2018", "id": "flower_fest_2018" }
     ],
-    "exlinks": [{ "label": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "" }],
     "cover": {
-      "ru": "images/events/flower_fest.jpg",
-      "en": "images/events/flower_fest_eng.jpg"
+      "ru": "events/flower_fest.jpg",
+      "en": "events/flower_fest_eng.jpg"
     },
     "description": {
       "ru": "Международный Фестиваль цветов",
       "en": "International Flower Festival"
     },
     "date": { "ru": "Июнь", "en": "June" },
-    "vid": "videos/flower_fest_2023.mp4"
+    "vid": "flower_fest_2023.mp4"
   },
   {
     "id": "sup",
@@ -95,19 +95,19 @@
       { "label": "2019", "id": "sup_2019" }
     ],
     "exlinks": [
-      { "label": "vk", "link": "" },
-      { "label": "web", "link": "" }
+      { "app": "vk", "link": "" },
+      { "app": "web", "link": "" }
     ],
     "cover": {
-      "ru": "images/events/sup.jpg",
-      "en": "images/events/sup_eng.jpg"
+      "ru": "events/sup.jpg",
+      "en": "events/sup_eng.jpg"
     },
     "description": {
       "ru": "Речной карнавал и SUP-Фестиваль",
       "en": "River-Carnival and SUP-Fest"
     },
     "date": { "ru": "Июль", "en": "July" },
-    "vid": "videos/sup_2023.mp4"
+    "vid": "sup_2023.mp4"
   },
   {
     "id": "IDJazz",
@@ -115,14 +115,14 @@
       { "label": "2021", "id": "IDJazz_2021" },
       { "label": "2020", "id": "IDJazz_2020" }
     ],
-    "exlinks": [{ "label": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "" }],
     "cover": {
-      "ru": "images/others/idJazz.jpg",
-      "en": "images/others/idJazz.jpg"
+      "ru": "others/idJazz.jpg",
+      "en": "others/idJazz.jpg"
     },
     "description": { "ru": "IDJazz Spb", "en": "IDJazz Spb" },
     "date": { "ru": "15-17 июля", "en": "July 15-17" },
-    "vid": "videos/IDJazz_2021.mp4"
+    "vid": "IDJazz_2021.mp4"
   },
   {
     "id": "theremin",
@@ -130,13 +130,13 @@
       { "label": "2021", "id": "theremin_2021" },
       { "label": "2020", "id": "theremin_2020" }
     ],
-    "exlinks": [{ "label": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "" }],
     "cover": {
-      "ru": "images/others/theremin.jpg",
-      "en": "images/others/theremin.jpg"
+      "ru": "others/theremin.jpg",
+      "en": "others/theremin.jpg"
     },
     "description": { "ru": "Theremin Fest", "en": "Theremin Fest" },
     "date": { "ru": "8 и 9 октября", "en": "October 8 and 9" },
-    "vid": "videos/theremin_fest_2021.mp4"
+    "vid": "theremin_fest_2021.mp4"
   }
 ]

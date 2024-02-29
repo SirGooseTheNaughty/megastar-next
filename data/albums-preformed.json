@@ -1,0 +1,39 @@
+[
+  {
+    "id": "flower_fest_alb_2017",
+    "src": "images/photos/2017/.flower_fest_alb_2017",
+    "cover": "images/photos/2017/.flower.jpg",
+    "description": {
+      "ru": "Международный Фестиваль цветов",
+      "en": "International Flower Festival"
+    },
+    "date": { "ru": "12 июня", "en": "June 12" }
+  },
+  {
+    "id": "aurora_alb_2017",
+    "src": "images/photos/2017/.aurora_alb_2017",
+    "cover": "images/projects/aurora.jpg",
+    "description": { "ru": "Аврора17", "en": "Aurora17" },
+    "date": { "ru": "4 и 5 ноября", "en": "November 4 and 5" }
+  },
+  {
+    "id": "show_opera_alb_2017",
+    "src": "images/photos/2017/.show_opera_alb_2017",
+    "cover": "images/photos/2017/.show_opera.jpg",
+    "description": {
+      "ru": "Show Opera в Венгрии",
+      "en": "Show Opera in Hungary"
+    },
+    "date": {
+      "ru": "Дни Москвы в Будапеште | 22 ноября",
+      "en": "Days of Moscow in Budapest | November 22"
+    }
+  },
+  {
+    "id": "new_year_night_alb_2017",
+    "src": "images/photos/2017/.new_year_night_alb_2017",
+    "cover": "images/photos/2017/.ded_moroz.jpg",
+    "description": { "ru": "Новогодняя ночь", "en": "New Year Night" },
+    "date": { "ru": "23 и 31 декабря)", "en": "December 23 and 31" }
+  }
+]

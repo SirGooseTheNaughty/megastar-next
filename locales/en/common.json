@@ -1,7 +1,11 @@
 {
     "events": "events",
     "projects": "projects",
-    "albums": "albums",
+    "photos": "photos",
     "videos": "videos",
-    "contacts": "contacts"
+    "contacts": "contacts",
+    "our_events": "our events",
+    "our_projects": "our projects",
+    "links": "links",
+    "copy_link": "Copy link"
 }

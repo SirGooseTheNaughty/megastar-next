@@ -1,7 +1,11 @@
 {
     "events": "события",
     "projects": "проекты",
-    "albums": "альбомы",
+    "photos": "фото",
     "videos": "видео",
-    "contacts": "контакты"
+    "contacts": "контакты",
+    "our_events": "наши события",
+    "our_projects": "наши проекты",
+    "links": "ссылки",
+    "copy_link": "Скопировать ссылку"
 }
