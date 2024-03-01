@@ -26,7 +26,7 @@ export const Photos = ({ albums = [], locale, rootUrl = '' }: any) => {
             </div>
             <Grid>
                 {activeYearAlbums.map(({ id, description, date, cover }) => (
-                    <Tile key={id} id={id} type={EventType.ALBUM} title={description[locale]} text={date[locale]} image={cover} rootUrl={rootUrl} />
+                    <Tile key={id} id={id} type={EventType.ALBUM} year={year} title={description[locale]} text={date[locale]} image={cover} rootUrl={rootUrl} />
                 ))}
             </Grid>
         </div>

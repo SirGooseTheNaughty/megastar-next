@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
@@ -10,16 +10,19 @@ import { CopyLink } from './copyLink';
 import { EventType, EventData } from '@/app/types';
 import Close from '../public/close.svg';
 import Play from '../public/play.svg';
+import { useNoScroll } from '@/app/hooks/useNoScroll';
 
 export const EventModal = ({
     events = [],
     projects = [],
+    videos = [],
     locale,
     imageRootUrl,
     videoRootUrl,
 }: {
     events: EventData[],
     projects: EventData[],
+    videos: EventData[],
     locale: string,
     imageRootUrl?: string,
     videoRootUrl?: string,
@@ -27,13 +30,21 @@ export const EventModal = ({
     const searchParams = useSearchParams();
     const event = searchParams.get(EventType.EVENT);
     const project = searchParams.get(EventType.PROJECT);
+    const video = searchParams.get(EventType.VIDEO);
 
-    if (!event && !project) {
+    const data: EventData | undefined | null = useMemo(() => {
+        if (event) {
+            return events.find(({ id }) => id === event);
+        }
+        if (project) {
+            return projects.find(({ id }) => id === project);
+        }
+        if (video) {
+            return videos.find(({ id }) => id === video);
+        }
         return null;
-    }
-
-    const data: EventData | undefined = event ? events.find(({ id }) => id === event) : projects.find(({ id }) => id === project);
-
+    }, [event, project, video, events, projects, videos]);
+    
     if (!data) {
         return null;
     }
@@ -55,7 +66,9 @@ export const EventModalContent = ({
     const { t } = useTranslation();
     const [isPlaying, setIsPlaying] = useState(false);
     const videoRef = useRef<HTMLVideoElement | null>(null);
-    const { id, description, albums, exlinks, vid, cover } = data;
+    const { description, albums, exlinks, vid, cover } = data;
+
+    useNoScroll();
 
     useEffect(() => {
         const onPlay = () => setIsPlaying(true);
@@ -65,12 +78,10 @@ export const EventModalContent = ({
 
         videoElement?.addEventListener('play', onPlay);
         videoElement?.addEventListener('pause', onPause);
-        document.body.classList.add('noscroll');
 
         return () => {
             videoElement?.addEventListener('play', onPlay);
             videoElement?.addEventListener('pause', onPause);
-            document.body.classList.remove('noscroll');
         }
     }, []);
 
@@ -83,10 +94,12 @@ export const EventModalContent = ({
             return null;
         }
 
+        const coverUrl = typeof cover === 'string' ? cover : cover[locale];
+
         return (
             <div className='absolute top-0 left-0 w-full h-full'>
                 <Image
-                    src={`${imageRootUrl}/${cover[locale]}`}
+                    src={`${imageRootUrl}/${coverUrl}`}
                     width={1200}
                     height={800}
                     alt='close icon'

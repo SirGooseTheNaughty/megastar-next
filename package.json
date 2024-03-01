@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.11",
+    "basic-ftp": "^5.0.5",
     "classnames": "^2.5.1",
     "i18next": "^23.10.0",
     "i18next-resources-to-backend": "^1.2.0",

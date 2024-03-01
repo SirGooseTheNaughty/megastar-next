@@ -5,6 +5,8 @@ export enum EventType {
     VIDEO = 'video',
 };
 
+export const YEAR = 'year';
+
 export type AlbumLink = {
     label: string,
     id: string,
@@ -26,12 +28,28 @@ export type Localized = {
     en: string,
 };
 
+export type OptionallyLocalized = Localized | string;
+
 export type EventData = {
     id: string,
     albums?: AlbumLink[],
     exlinks?: ExternalLink[],
-    cover: Localized,
+    cover: OptionallyLocalized,
+    description: Localized,
+    date?: Localized,
+    vid: string,
+};
+
+export type Album = {
+    id: string,
+    src: string,
+    cover: string,
     description: Localized,
     date: Localized,
-    vid: string,
+    files?: string[],
+};
+
+export type AlbumYear = {
+    year: string,
+    albums: Album[],
 };

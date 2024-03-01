@@ -13,16 +13,20 @@ import { EventModal } from "@/components/eventModal";
 import { TranslationsProvider } from "@/components/translationsProvider";
 import { EventType } from "../types";
 import { ScrollBarWidth } from "@/components/scrollBarWidth";
+// import { getAlbumsData } from "../functions/addAlbumsData";
 
 import events from '@/data/events.json';
 import projects from '@/data/projects.json';
-import albums from '@/data/albums.json';
+import albums from '@/data/enrichedAlbums.json';
+// import albumsWithoutData from '@/data/albums.json';
 import videos from '@/data/videos.json';
+import { AlbumModal } from "@/components/albumModal";
 
 const i18nNamespaces = ['common'];
 
 export default async function Home({ params: { locale }}: any) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
+  // const albums = await getAlbumsData(albumsWithoutData);
 
   return (
     <TranslationsProvider
@@ -56,7 +60,19 @@ export default async function Home({ params: { locale }}: any) {
         <Heading id='contacts' t={t} />
         <Contacts />
         <Footer events={events} projects={projects} albums={albums} t={t} locale={locale} />
-        <EventModal events={events} projects={projects} locale={locale} imageRootUrl={process.env.SRC_PHOTOS} videoRootUrl={process.env.SRC_VIDEOS} />
+        <EventModal
+          events={events}
+          projects={projects}
+          videos={videos}
+          locale={locale}
+          imageRootUrl={process.env.SRC_PHOTOS}
+          videoRootUrl={process.env.SRC_VIDEOS}
+        />
+        <AlbumModal
+          albums={albums}
+          locale={locale}
+          imageRootUrl={process.env.SRC_PHOTOS}
+        />
       </main>
       <ScrollBarWidth />
     </TranslationsProvider>

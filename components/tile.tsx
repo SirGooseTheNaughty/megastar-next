@@ -9,6 +9,7 @@ export const Tile = (
         title,
         text,
         image,
+        year,
         rootUrl = process.env.SRC_PHOTOS
     }: {
         id: string;
@@ -16,11 +17,13 @@ export const Tile = (
         title: string;
         text?: string;
         image?: string;
+        year?: string;
         rootUrl?: string;
     }
 ) => {
+    const link = year ? `?year=${year}&${type}=${id}` : `?${type}=${id}`;
     return (
-        <Link href={`?${type}=${id}`} scroll={false} className="flex relative w-[32%] aspect-4/3 cursor-pointer">
+        <Link href={link} scroll={false} className="flex relative w-[32%] aspect-4/3 cursor-pointer">
             {image && (
                 <Image src={`${rootUrl}/${image}`} alt={title} width={400} height={300} className="absolute w-full h-full" />
             )}
