@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { EventType, AlbumYear, YEAR, Album } from '@/app/types';
 import Close from '../public/close.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
+import { PhotoModal } from './photoModal';
 
 export const AlbumModal = ({
     albums = [],
@@ -47,30 +48,45 @@ export const AlbumModalContent = ({
     locale: string,
     imageRootUrl?: string,
 }) => {
-    const { id, description, files = [] } = data;
-
     useNoScroll();
+    const [openedPhotoIndex, setOpenedPhotoIndex] = useState<number | null>(null);
+    const closePhoto = () => setOpenedPhotoIndex(null);
+
+    const { id, description, files = [] } = data;
+    const photos = files.map((fileName: string) => `${imageRootUrl}/photos/${year}/${id}/${fileName}`);
+
+    const content = useMemo(() => {
+        if (openedPhotoIndex === null) {
+            return (
+                <div className='relative bg-lightblue w-10/12 mx-auto px-16 py-12'>
+                    <Link href='/' scroll={false} className='absolute top-4 right-4'>
+                        <Image src={Close} width={32} alt='close icon' />
+                    </Link>
+                    <h3 className='text-3xl'>{description[locale]} | {year}</h3>
+                    <div className="flex flex-wrap justify-center gap-x-[2%] gap-y-8 py-10">
+                        {photos.map((imageUrl, index) => (
+                            <Image
+                                key={imageUrl}
+                                src={imageUrl}
+                                width={400}
+                                height={300}
+                                alt=''
+                                className='w-[32%] aspect-4/3 cursor-pointer'
+                                onClick={() => setOpenedPhotoIndex(index)}
+                            />
+                        ))}
+                    </div>
+                </div>
+            )
+        }
+        return (
+            <PhotoModal photos={photos} initialIndex={openedPhotoIndex as number} closePhoto={closePhoto} />
+        );
+    }, [openedPhotoIndex, photos, year, description, locale]);
 
     return (
-        <div className='modal fixed top-0 left-0 w-full h-full overflow-auto py-20 bg-lightblue bg-opacity-50 z-50 backdrop-blur-md'>
-            <div className='relative bg-lightblue w-10/12 mx-auto px-16 py-12'>
-                <Link href='/' scroll={false} className='absolute top-4 right-4'>
-                    <Image src={Close} width={32} alt='close icon' />
-                </Link>
-                <h3 className='text-3xl'>{description[locale]} | {year}</h3>
-                <div className="flex flex-wrap justify-center gap-x-[2%] gap-y-8 py-10">
-                    {files.map((imageUrl) => (
-                        <Image
-                            key={imageUrl}
-                            src={`${imageRootUrl}/photos/${year}/${id}/${imageUrl}`}
-                            width={400}
-                            height={300}
-                            alt=''
-                            className='w-[32%] aspect-4/3 cursor-pointer'
-                        />
-                    ))}
-                </div>
-            </div>
+        <div className='modal fixed top-0 left-0 w-full h-full overflow-y-auto py-20 bg-lightblue bg-opacity-50 z-50 backdrop-blur-md'>
+            {content}
         </div>
-    )
+    );
 };

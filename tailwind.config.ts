@@ -22,7 +22,7 @@ const config: Config = {
       },
       scale: {
           '-100': '-1',
-      }
+      },
     },
   },
   plugins: [],
