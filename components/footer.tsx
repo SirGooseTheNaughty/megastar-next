@@ -18,7 +18,7 @@ export const Footer = (
     }
 ) => {
     return (
-        <div className="grid grid-cols-[auto_auto_auto_auto_auto] p-20">
+        <div className="grid place-items-center lg:place-items-start lg:grid-cols-[auto_auto_auto_auto_auto] gap-4 lg:p-20">
             <Link href="/" className="h-full block overflow-hidden">
                 <Image
                     src={Logo}
@@ -36,7 +36,7 @@ export const Footer = (
             <FooterColumn title={t('photos')} link='#photos'>
                 {albums.map(({ year }: any) => <FooterNavItem key={year} link={`#${year}`} text={year} />)}
             </FooterColumn>
-            <ul>
+            <ul className="hidden lg:block">
                 <a href='#videos'>
                     <li className="uppercase font-bold mb-2">{t('videos')}</li>
                 </a>
@@ -50,7 +50,7 @@ export const Footer = (
 
 const FooterColumn = ({ title, link, children = null }: any) => {
     return (
-        <ul>
+        <ul className="hidden lg:block">
             <a href={link}>
                 <li className="uppercase font-bold mb-2">{title}</li>
             </a>

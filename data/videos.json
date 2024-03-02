@@ -69,8 +69,8 @@
     "id": "wonder_of_light_2022_vid",
     "cover": "posters/wonder_of_light_2022_cover.png",
     "description": {
-      "ru": "«Чудо Света» 2022 Петропавловская крепость",
-      "en": "“Wonder of Light” 2022 Peter and Paul Fortress"
+      "ru": "«Чудо Света» 2022 | Петропавловская крепость",
+      "en": "“Wonder of Light” 2022 | Peter and Paul Fortress"
     },
     "vid": "wonder_of_light_2022.mp4"
   },
@@ -102,8 +102,8 @@
     "id": "wonder_of_light_2021_vid",
     "cover": "posters/wonder_of_light_2021.png",
     "description": {
-      "ru": "«Чудо Света» 2021 <br>Петропавловская крепость",
-      "en": "“Wonder of Light” 2021<br>Peter and Paul Fortress"
+      "ru": "«Чудо Света» 2021Петропавловская крепость",
+      "en": "“Wonder of Light” 2021 | Peter and Paul Fortress"
     },
     "vid": "wonder_of_light_2021.mp4"
   },
@@ -117,7 +117,7 @@
     "id": "star_of_hope_2021_vid",
     "cover": "posters/star_of_hope_2021.png",
     "description": {
-      "ru": "Фестиваль<br>«Звезда Надежды» 2021",
+      "ru": "Фестиваль «Звезда Надежды» 2021",
       "en": "“Star of Hope” Festival 2021"
     },
     "vid": "star_of_hope.mp4"
@@ -157,7 +157,7 @@
     "cover": "posters/christmas_star_fire_fest_2021.png",
     "description": {
       "ru": "Фестиваль огня «Рождественская Звезда» 2021",
-      "en": "“Christmas Star” <br>Fire Festival 2021"
+      "en": "“Christmas Star” Fire Festival 2021"
     },
     "vid": "christmas_star_fire_fest_2021.mp4"
   },
@@ -165,8 +165,8 @@
     "id": "wonder_of_light_vid",
     "cover": "posters/wonder_of_light_2020.png",
     "description": {
-      "ru": "«Чудо Света» 2020 <br>Петропавловская крепость",
-      "en": "“Wonder of Light” 2020<br>Peter and Paul Fortress"
+      "ru": "«Чудо Света» 2020 | Петропавловская крепость",
+      "en": "“Wonder of Light” 2020 | Peter and Paul Fortress"
     },
     "vid": "wonder_of_light_2020.mp4"
   },
@@ -174,8 +174,8 @@
     "id": "drones_2020_vid",
     "cover": "posters/drones_2020.png",
     "description": {
-      "ru": "«Чудо Света» 2020 <br>Шоу дронов",
-      "en": "“Wonder of Light” 2020<br>Drone Show"
+      "ru": "«Чудо Света» 2020 | Шоу дронов",
+      "en": "“Wonder of Light” 2020 | Drone Show"
     },
     "vid": "drones_2020.mp4"
   },
@@ -229,7 +229,7 @@
     "cover": "posters/christmas_star_fire_fest_2020.png",
     "description": {
       "ru": "Фестиваль огня «Рождественская Звезда» 2020",
-      "en": "“Christmas Star” <br>Fire Festival 2020"
+      "en": "“Christmas Star” Fire Festival 2020"
     },
     "vid": "christmas_star_fire_fest_2020.mp4"
   },
@@ -246,7 +246,7 @@
     "id": "ded_moroz_vid",
     "cover": "posters/ded_moroz.png",
     "description": {
-      "ru": "Встреча Всероссийского<br>Деда Мороза",
+      "ru": "Встреча Всероссийского Деда Мороза",
       "en": "Meeting of Ded Moroz"
     },
     "vid": "ded_moroz.mp4"
@@ -255,8 +255,8 @@
     "id": "wonder_of_light_fall_vid",
     "cover": "posters/wonder_of_light_fall.png",
     "description": {
-      "ru": "«Чудо Света» 2019 <br>Дворцовая площадь",
-      "en": "Wonder of Light 2019 <br>Palace Square"
+      "ru": "«Чудо Света» 2019 | Дворцовая площадь",
+      "en": "Wonder of Light 2019 | Palace Square"
     },
     "vid": "wonder_of_light_fall.mp4"
   },
@@ -271,7 +271,7 @@
     "cover": "posters/flower_fest_2019.png",
     "description": {
       "ru": "Международный Фестиваль цветов 2019",
-      "en": "International <br>Flower Festival 2019"
+      "en": "International Flower Festival 2019"
     },
     "vid": "flower_fest.mp4"
   },
@@ -285,7 +285,7 @@
     "id": "city_day_vid",
     "cover": "posters/city_day.png",
     "description": {
-      "ru": "День Города<br>Праздник на Невском",
+      "ru": "День Города. Праздник на Невском",
       "en": "City Day. Festival on Nevsky prospect"
     },
     "vid": "city_day.mp4"
@@ -294,8 +294,8 @@
     "id": "wonder_of_light_spring_vid",
     "cover": "posters/wonder_of_light_spring.png",
     "description": {
-      "ru": "«Чудо Света» 2019 <br>ТЮЗ",
-      "en": "Wonder of Light 2019 <br>The A.Bryantsev Youth Theatre"
+      "ru": "«Чудо Света» 2019 | ТЮЗ",
+      "en": "Wonder of Light 2019 | The A.Bryantsev Youth Theatre"
     },
     "vid": "wonder_of_light_spring.mp4"
   },
@@ -310,7 +310,7 @@
     "cover": "posters/christmas_star_fire_fest_2019.png",
     "description": {
       "ru": "Фестиваль Огня «Рождественская Звезда» 2019",
-      "en": "Christmas Star <br>Fire Festival 2019"
+      "en": "Christmas Star Fire Festival 2019"
     },
     "vid": "christmas_star_fire_fest.mp4"
   },

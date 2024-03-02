@@ -23,6 +23,9 @@ const config: Config = {
       scale: {
           '-100': '-1',
       },
+      screens: {
+          'supports-hover': {'raw': '(hover: hover)'},
+      }
     },
   },
   plugins: [],

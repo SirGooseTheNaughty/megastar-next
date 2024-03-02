@@ -34,7 +34,7 @@ export const Header = ({
     );
 
     return (
-        <header id='start' className="flex justify-between relative w-full h-32 px-20 z-10">
+        <header id='start' className="flex justify-center lg:justify-between relative w-full h-32 px-20 z-10">
             <Link href="/" className="h-full block overflow-hidden">
                 <Image
                     src={Logo}

@@ -25,7 +25,7 @@ export const Photos = ({ albums = [], locale, rootUrl = '' }: any) => {
 
     return (
         <div>
-            <div className="flex justify-center gap-4 text-3xl mt-20 -mb-10">
+            <div className="flex justify-center gap-4 text-xl md:text-2xl lg:text-3xl mt-20 -mb-10">
                 {albums.map(({ year: albumYear }) => (
                     <button
                         key={albumYear}
