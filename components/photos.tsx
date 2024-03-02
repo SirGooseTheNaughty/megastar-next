@@ -1,14 +1,27 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import cn from 'classnames';
 import { Grid } from "./grid";
 import { Tile } from "./tile";
-import { EventType } from "@/app/types";
+import { EventType, YEAR_EVENT } from "@/app/types";
 
 export const Photos = ({ albums = [], locale, rootUrl = '' }: any) => {
     const [year, setYear] = useState(albums?.[0].year);
     const activeYearAlbums = albums?.find(({ year: albumYear }) => albumYear === year)?.albums || [];
+
+    useEffect(() => {
+        const messageHandler = (event: MessageEvent) => {
+            const { type, data } = event.data;
+            if (type === YEAR_EVENT && albums.find(({ year }) => year === data)) {
+                setYear(data);
+            }
+        };
+
+        window.addEventListener('message', messageHandler);
+
+        return () => window.removeEventListener('message', messageHandler);
+    }, [setYear, albums]);
 
     return (
         <div>

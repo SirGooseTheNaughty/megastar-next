@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MenuDropdownItem } from "./menuDropdownItem";
+import { MenuYearDropdownItem } from "./menuYearDropdownItem";
 import { Language } from "./language";
 
 export const Header = ({
@@ -48,7 +50,7 @@ export const Header = ({
                     {projects.map(({ id, description }: any) => <MenuDropdownItem key={id} link={`?event=${id}`} text={description[locale]} />)}
                 </MenuItem>
                 <MenuItem title='photos' link='#photos'>
-                    {albums.map(({ year }: any) => <MenuDropdownItem key={year} link='#photos' text={year} />)}
+                    {albums.map(({ year }: any) => <MenuYearDropdownItem key={year} link='#photos' year={year} />)}
                 </MenuItem>
                 <MenuItem title='videos' link='#videos'></MenuItem>
                 <MenuItem title='contacts' link='#contacts'></MenuItem>
@@ -60,9 +62,3 @@ export const Header = ({
         </header>
     );
 };
-
-const MenuDropdownItem = ({ link, text }: any) => (
-    <li className="truncate">
-        <Link href={link} shallow className="block text-sm py-2 duration-200 hover:text-purple">{text}</Link>
-    </li>
-);

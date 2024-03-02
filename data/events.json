@@ -121,7 +121,7 @@
       "en": "others/idJazz.jpg"
     },
     "description": { "ru": "IDJazz Spb", "en": "IDJazz Spb" },
-    "date": { "ru": "15-17 июля", "en": "July 15-17" },
+    "date": { "ru": "15-17 июля", "en": "July, 15-17" },
     "vid": "IDJazz_2021.mp4"
   },
   {
@@ -136,7 +136,7 @@
       "en": "others/theremin.jpg"
     },
     "description": { "ru": "Theremin Fest", "en": "Theremin Fest" },
-    "date": { "ru": "8 и 9 октября", "en": "October 8 and 9" },
+    "date": { "ru": "8 и 9 октября", "en": "October, 8 and 9" },
     "vid": "theremin_fest_2021.mp4"
   }
 ]

@@ -53,3 +53,5 @@ export type AlbumYear = {
     year: string,
     albums: Album[],
 };
+
+export const YEAR_EVENT = 'set-year';

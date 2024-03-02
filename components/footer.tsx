@@ -37,10 +37,10 @@ export const Footer = (
             </FooterColumn>
             <ul>
                 <a href='#videos'>
-                    <li className="uppercase font-bold">{t('videos')}</li>
+                    <li className="uppercase font-bold mb-2">{t('videos')}</li>
                 </a>
                 <a href='#contacts'>
-                    <li className="uppercase font-bold">{t('contacts')}</li>
+                    <li className="uppercase font-bold mb-2">{t('contacts')}</li>
                 </a>
             </ul>
         </div>
@@ -51,7 +51,7 @@ const FooterColumn = ({ title, link, children = null }: any) => {
     return (
         <ul>
             <a href={link}>
-                <li className="uppercase font-bold">{title}</li>
+                <li className="uppercase font-bold mb-2">{title}</li>
             </a>
             {children}
         </ul>
@@ -60,6 +60,6 @@ const FooterColumn = ({ title, link, children = null }: any) => {
 
 const FooterNavItem = ({ link, text }: any) => (
     <li className="">
-        <a href={link} className="block text-sm py-2 duration-200 hover:text-purple">{text}</a>
+        <a href={link} className="block text-sm py-1 duration-200 hover:text-purple">{text}</a>
     </li>
 );

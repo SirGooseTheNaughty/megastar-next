@@ -23,7 +23,7 @@ export const Tile = (
 ) => {
     const link = year ? `?year=${year}&${type}=${id}` : `?${type}=${id}`;
     return (
-        <Link href={link} scroll={false} className="flex relative w-[32%] aspect-4/3 cursor-pointer">
+        <Link href={link} scroll={false} className="flex relative w-[32%] aspect-4/3 cursor-pointer skeleton-animation">
             {image && (
                 <Image src={`${rootUrl}/${image}`} alt={title} width={400} height={300} className="absolute w-full h-full" />
             )}

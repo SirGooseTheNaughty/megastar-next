@@ -10,7 +10,7 @@
           "ru": "Фестиваль ледовых скульптур «КроншЛЁД»",
           "en": "“KronshLED” Ice Sculpture Festival"
         },
-        "date": { "ru": "15 февраля - 6 марта", "en": "February 15 – March 6" },
+        "date": { "ru": "15 февраля - 6 марта", "en": "February, 15 - March, 6" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -39,7 +39,7 @@
           "ru": "Петровский Фестиваль огня",
           "en": "Fire Festival"
         },
-        "date": { "ru": "27 мая", "en": "May 27" },
+        "date": { "ru": "27 мая", "en": "May, 27" },
         "files": [
           "1 (21).jpg",
           "1 (32).jpg",
@@ -85,7 +85,7 @@
           "ru": "Международный фестиваль духовых оркестров",
           "en": "International Brass Band Festival"
         },
-        "date": { "ru": "12 июня", "en": "June 12" },
+        "date": { "ru": "12 июня", "en": "June, 12" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -124,9 +124,9 @@
         "cover": "photos/2023/flower_fest_alb_2023/1 (1).jpg",
         "description": {
           "ru": "Международный Фестиваль цветов",
-          "en": "International <br>Flower Festival"
+          "en": "International Flower Festival"
         },
-        "date": { "ru": "8 июля", "en": "July 8" },
+        "date": { "ru": "8 июля", "en": "July, 8" },
         "files": [
           "1 (21).jpg",
           "1 (32).jpg",
@@ -167,7 +167,7 @@
         "src": "photos/2023/kronshbal_alb_2023",
         "cover": "photos/2023/kronshbal_alb_2023/1 (1).jpg",
         "description": { "ru": "Кронштадтский бал", "en": "Kronstadt Ball" },
-        "date": { "ru": "8 июля", "en": "July 8" },
+        "date": { "ru": "8 июля", "en": "July, 8" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -192,7 +192,7 @@
           "ru": "Речной карнавал и SUP-Фестиваль",
           "en": "River-Carnival and SUP-fest"
         },
-        "date": { "ru": "5 августа", "en": "August 5" },
+        "date": { "ru": "5 августа", "en": "August, 5" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -221,7 +221,7 @@
           "ru": "«Чудо Света» Петропавловская крепость",
           "en": "“Wonder of Light” Festival | Peter and Paul Fortress"
         },
-        "date": { "ru": "4-6 ноября", "en": "November 4-6" },
+        "date": { "ru": "4-6 ноября", "en": "November, 4-6" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -265,7 +265,7 @@
         },
         "date": {
           "ru": "23 декабря - 8 января",
-          "en": "December 23 - January 8"
+          "en": "December, 23 - January, 8"
         },
         "files": [
           "1 (21).jpg",
@@ -315,7 +315,7 @@
           "ru": "Петровский Фестиваль огня",
           "en": "Fire Festival"
         },
-        "date": { "ru": "28 мая", "en": "May 31" },
+        "date": { "ru": "28 мая", "en": "May, 31" },
         "files": [
           "1 (21).jpg",
           "1 (32).jpg",
@@ -383,9 +383,9 @@
         "cover": "photos/2022/flower_fest_alb_2022/1 (1).jpg",
         "description": {
           "ru": "Международный Фестиваль цветов",
-          "en": "International <br>Flower Festival"
+          "en": "International Flower Festival"
         },
-        "date": { "ru": "8-10 июня", "en": "June 8-10" },
+        "date": { "ru": "8-10 июня", "en": "June, 8-10" },
         "files": [
           "1 (21).jpg",
           "1 (32).jpg",
@@ -444,7 +444,7 @@
         "src": "photos/2022/water_fest_alb_2022",
         "cover": "photos/2022/water_fest_alb_2022/1 (1).jpg",
         "description": { "ru": "Водный фестиваль", "en": "Water Fest" },
-        "date": { "ru": "6-7 августа", "en": "August 6-8" },
+        "date": { "ru": "6-7 августа", "en": "August, 6-8" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -474,7 +474,7 @@
           "ru": "«Чудо Света» Петропавловская крепость",
           "en": "“Wonder of Light” Festival | Peter and Paul Fortress"
         },
-        "date": { "ru": "4-6 ноября", "en": "November 4-6" },
+        "date": { "ru": "4-6 ноября", "en": "November, 4-6" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -514,7 +514,7 @@
         "description": { "ru": "Новый год 2023", "en": "New Year 2023" },
         "date": {
           "ru": "31 декабря - 8 января",
-          "en": "December 31 - January 8"
+          "en": "December, 31 - January, 8"
         },
         "files": [
           "1 (3).jpg",
@@ -547,9 +547,9 @@
         "cover": "photos/2021/christmas_star_fire_fest_alb_2021/1 (1).jpg",
         "description": {
           "ru": "Фестиваль огня «Рождественская Звезда»",
-          "en": "“Christmas Star” <br>Fire Festival"
+          "en": "“Christmas Star” Fire Festival"
         },
-        "date": { "ru": "7 января", "en": "January 7" },
+        "date": { "ru": "7 января", "en": "January, 7" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -586,7 +586,7 @@
         "src": "photos/2021/ice_opera_alb_2021",
         "cover": "photos/2021/ice_opera_alb_2021/1 (1).jpg",
         "description": { "ru": "Ice Opera", "en": "Ice Opera" },
-        "date": { "ru": "17-19 мая", "en": "May 17-19" },
+        "date": { "ru": "17-19 мая", "en": "May, 17-19" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -614,7 +614,7 @@
           "ru": "Детское шоу на льду @MAZE",
           "en": "Kids Show on Ice @MAZE"
         },
-        "date": { "ru": "5-6 июня", "en": "June 5-6" },
+        "date": { "ru": "5-6 июня", "en": "June, 5-6" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -646,7 +646,7 @@
           "ru": "Речной карнавал и SUP-Фестиваль",
           "en": "River-Carnival and SUP-fest"
         },
-        "date": { "ru": "31 июля", "en": "July 31" },
+        "date": { "ru": "31 июля", "en": "July, 31" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -673,9 +673,9 @@
         "cover": "photos/2021/flower_fest_alb_2021/1 (1).jpg",
         "description": {
           "ru": "Международный Фестиваль цветов",
-          "en": "International <br>Flower Festival"
+          "en": "International Flower Festival"
         },
-        "date": { "ru": "24-26 сентября", "en": "September 24-26" },
+        "date": { "ru": "24-26 сентября", "en": "September, 24-26" },
         "files": [
           "1 (21).jpg",
           "1 (32).jpg",
@@ -735,7 +735,7 @@
         "src": "photos/2021/theremin_alb_2021",
         "cover": "photos/2021/theremin_alb_2021/1 (1).jpg",
         "description": { "ru": "Theremin Fest", "en": "Theremin Fest" },
-        "date": { "ru": "20 ноября", "en": "November 20" },
+        "date": { "ru": "20 ноября", "en": "November, 20" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -758,10 +758,10 @@
         "src": "photos/2021/star_of_hope_alb_2021",
         "cover": "photos/2021/star_of_hope_alb_2021/1 (1).jpg",
         "description": {
-          "ru": "Фестиваль<br>«Звезда Надежды»",
+          "ru": "Фестиваль «Звезда Надежды»",
           "en": "“Star of Hope” Festival"
         },
-        "date": { "ru": "28 ноября", "en": "November 28" },
+        "date": { "ru": "28 ноября", "en": "November, 28" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -793,7 +793,7 @@
         "src": "photos/2021/IDJazz_alb_2021",
         "cover": "photos/2021/IDJazz_alb_2021/1 (1).jpg",
         "description": { "ru": "IDJazz SPb", "en": "IDJazz SPb" },
-        "date": { "ru": "4-5 декабря", "en": "December 4-5" },
+        "date": { "ru": "4-5 декабря", "en": "December, 4-5" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -813,10 +813,10 @@
         "src": "photos/2021/wonder_of_light_alb_2021",
         "cover": "photos/2021/wonder_of_light_alb_2021/1 (1).jpg",
         "description": {
-          "ru": "«Чудо Света» <br>Петропавловская крепость",
+          "ru": "«Чудо Света» Петропавловская крепость",
           "en": "“Wonder of Light” Festival | Peter and Paul Fortress"
         },
-        "date": { "ru": "5-6 декабря", "en": "December 5-6" },
+        "date": { "ru": "5-6 декабря", "en": "December, 5-6" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -859,7 +859,7 @@
           "ru": "Новый год 2022",
           "en": "New Year 2022. TV Project"
         },
-        "date": { "ru": "31 декабря)", "en": "December 31" },
+        "date": { "ru": "31 декабря)", "en": "December, 31" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -907,7 +907,7 @@
           "ru": "Фестиваль Огня «Рождественская Звезда»",
           "en": "“Christmas Star” Fire Festival"
         },
-        "date": { "ru": "7 и 8 января", "en": "January 7 and 8" },
+        "date": { "ru": "7 и 8 января", "en": "January, 7 and 8" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -949,7 +949,7 @@
         },
         "date": {
           "ru": "БКЗ «Октябрьский» | 22 февраля",
-          "en": "Grand Concert Hall “Oktyabrskiy” | February 22"
+          "en": "Grand Concert Hall “Oktyabrskiy” | February, 22"
         },
         "files": [
           "1 (3).jpg",
@@ -973,7 +973,7 @@
         "src": "photos/2020/maslenitsa_alb_2020",
         "cover": "photos/2020/maslenitsa.jpg",
         "description": { "ru": "МАСЛЕНИЦА  2.0", "en": "MASLENITSA 2.0" },
-        "date": { "ru": "1 марта", "en": "March 1" },
+        "date": { "ru": "1 марта", "en": "March, 1" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1007,7 +1007,7 @@
         "src": "photos/2020/city_day_alb_2020",
         "cover": "photos/2020/city_day.jpg",
         "description": { "ru": "День города", "en": "City Day" },
-        "date": { "ru": "26 мая", "en": "May 26" },
+        "date": { "ru": "26 мая", "en": "May, 26" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1038,7 +1038,7 @@
         "src": "photos/2020/russia_day_alb_2020",
         "cover": "photos/2020/russia_day.jpg",
         "description": { "ru": "День России", "en": "Russia Day" },
-        "date": { "ru": "12 июня", "en": "June 12" },
+        "date": { "ru": "12 июня", "en": "June, 12" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1073,7 +1073,7 @@
         "src": "photos/2020/IDJazz_alb_2020",
         "cover": "photos/2020/IDJazz.jpg",
         "description": { "ru": "IDJazz SPb", "en": "IDJazz SPb" },
-        "date": { "ru": "15-17 июля", "en": "July 15-17" },
+        "date": { "ru": "15-17 июля", "en": "July, 15-17" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1098,7 +1098,7 @@
           "ru": "Речной карнавал и SUP-Фестиваль",
           "en": "River-Carnival and SUP-fest"
         },
-        "date": { "ru": "8 августа", "en": "August 8" },
+        "date": { "ru": "8 августа", "en": "August, 8" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1132,9 +1132,9 @@
         "cover": "photos/2020/flower_fest.jpg",
         "description": {
           "ru": "Международный Фестиваль цветов",
-          "en": "International <br>Flower Festival"
+          "en": "International Flower Festival"
         },
-        "date": { "ru": "28-30 августа", "en": "August 28-30" },
+        "date": { "ru": "28-30 августа", "en": "August, 28-30" },
         "files": [
           "1 (21).jpg",
           "1 (32).jpg",
@@ -1186,7 +1186,7 @@
         "src": "photos/2020/theremin_alb_2020",
         "cover": "photos/2020/theremin.jpg",
         "description": { "ru": "Theremin Fest", "en": "Theremin Fest" },
-        "date": { "ru": "8-9 октября", "en": "October 8-9" },
+        "date": { "ru": "8-9 октября", "en": "October, 8-9" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1206,10 +1206,10 @@
         "src": "photos/2020/wonder_of_light_alb_2020",
         "cover": "photos/2020/wonder_of_light.jpg",
         "description": {
-          "ru": "«Чудо Света» <br>Петропавловская крепость",
+          "ru": "«Чудо Света» Петропавловская крепость",
           "en": "“Wonder of Light” Festival | Peter and Paul Fortress"
         },
-        "date": { "ru": "7-8 ноября", "en": "November 7-8" },
+        "date": { "ru": "7-8 ноября", "en": "November, 7-8" },
         "files": [
           "1 (21).jpg",
           "1 (32).jpg",
@@ -1257,7 +1257,7 @@
           "ru": "Новый год 2021. Телепроект «Карнавальная ночь» ",
           "en": "New Year 2021. The “Carnival Night” TV Project"
         },
-        "date": { "ru": "31 декабря", "en": "December 31" },
+        "date": { "ru": "31 декабря", "en": "December, 31" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1301,9 +1301,9 @@
         "cover": "photos/2019/1_album.png",
         "description": {
           "ru": "Фестиваль Огня «Рождественская Звезда»",
-          "en": "“Christmas Star” <br>Fire Festival"
+          "en": "“Christmas Star” Fire Festival"
         },
-        "date": { "ru": "7 и 8 января", "en": "January 7 and 8" },
+        "date": { "ru": "7 и 8 января", "en": "January, 7 and 8" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1334,7 +1334,7 @@
         "src": "photos/2019/siege_panorama_alb_2019",
         "cover": "photos/2019/2_album.png",
         "description": { "ru": "Панорама Блокады", "en": "The Seige Panorama" },
-        "date": { "ru": "27 января", "en": "January 27" },
+        "date": { "ru": "27 января", "en": "January, 27" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1364,7 +1364,7 @@
           "ru": "Show Opera в Болгарии",
           "en": "Show Opera in Bulgaria"
         },
-        "date": { "ru": "Пловдив | 3 апреля", "en": "Plovdiv | April 3" },
+        "date": { "ru": "Пловдив | 3 апреля", "en": "Plovdiv | April, 3" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1378,10 +1378,10 @@
         "src": "photos/2019/wonder_of_light_alb_tus",
         "cover": "photos/2019/4_album.png",
         "description": {
-          "ru": "«Чудо Света» <br>ТЮЗ",
+          "ru": "«Чудо Света» ТЮЗ",
           "en": "“Wonder of Light” Festival | The A.Bryantsev Youth Theatre"
         },
-        "date": { "ru": "20 и 21 апреля", "en": "April 20 and 21" },
+        "date": { "ru": "20 и 21 апреля", "en": "April, 20 and 21" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1418,10 +1418,10 @@
         "src": "photos/2019/city_day_alb_2019",
         "cover": "photos/2019/5_album.png",
         "description": {
-          "ru": "День Города<br>Праздник на Невском",
+          "ru": "День Города Праздник на Невском",
           "en": "City Day. Festival on Nevsky prospect"
         },
-        "date": { "ru": "26 мая", "en": "May 26" },
+        "date": { "ru": "26 мая", "en": "May, 26" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1444,7 +1444,7 @@
         "src": "photos/2019/peter_sanctus_alb_2019",
         "cover": "photos/2019/6_album.png",
         "description": { "ru": "Peter Sanctus", "en": "Peter Sanctus" },
-        "date": { "ru": "27 мая", "en": "May 27" },
+        "date": { "ru": "27 мая", "en": "May, 27" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1465,9 +1465,9 @@
         "cover": "photos/2019/7_album.png",
         "description": {
           "ru": "Международный Фестиваль цветов",
-          "en": "International <br>Flower Festival"
+          "en": "International Flower Festival"
         },
-        "date": { "ru": "11-13 июня", "en": "June 11-13" },
+        "date": { "ru": "11-13 июня", "en": "June, 11-13" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1504,7 +1504,7 @@
           "ru": "Речной карнавал и SUP-Фестиваль",
           "en": "River-Carnival and SUP-fest"
         },
-        "date": { "ru": "20 июля", "en": "July 20" },
+        "date": { "ru": "20 июля", "en": "July, 20" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1539,7 +1539,7 @@
         },
         "date": {
           "ru": "Дворцовая площадь | 2 и 3 ноября",
-          "en": "Palace Square | November 2 and 3"
+          "en": "Palace Square | November, 2 and 3"
         },
         "files": [
           "1 (21).jpg",
@@ -1574,7 +1574,7 @@
         "src": "photos/2019/new_year_night_alb_2019",
         "cover": "photos/2019/10_album.png",
         "description": { "ru": "Новогодняя ночь", "en": "New Year Night" },
-        "date": { "ru": "21 и 31 декабря", "en": "December 21 and 31" },
+        "date": { "ru": "21 и 31 декабря", "en": "December, 21 and 31" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1605,7 +1605,7 @@
           "ru": "Фестиваль Огня «Рождественская Звезда»",
           "en": "“Christmas Star” Fire Festival"
         },
-        "date": { "ru": "7 и 8 января", "en": "January 7 and 8" },
+        "date": { "ru": "7 и 8 января", "en": "January, 7 and 8" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1639,7 +1639,7 @@
         },
         "date": {
           "ru": "БКЗ «Октябрьский» | 11 апреля",
-          "en": "Grand Concert Hall “Oktyabrskiy” | April 11"
+          "en": "Grand Concert Hall “Oktyabrskiy” | April, 11"
         },
         "files": [
           "1 (21).jpg",
@@ -1680,7 +1680,7 @@
         },
         "date": {
           "ru": "Парк искусств «Музеон» | 26 мая",
-          "en": "Muzeon Park of Arts | May 26"
+          "en": "Muzeon Park of Arts | May, 26"
         },
         "files": [
           "1 (3).jpg",
@@ -1697,10 +1697,10 @@
         "src": "photos/2018/city_day_alb_2018",
         "cover": "photos/2018/city_day.jpg",
         "description": {
-          "ru": "День Города<br>Праздник на Невском",
+          "ru": "День Города Праздник на Невском",
           "en": "City Day. Festival on Nevsky prospect"
         },
-        "date": { "ru": "26 мая", "en": "May 26" },
+        "date": { "ru": "26 мая", "en": "May, 26" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1722,9 +1722,9 @@
         "cover": "photos/2018/flower.jpg",
         "description": {
           "ru": "Международный Фестиваль цветов",
-          "en": "International <br>Flower Festival"
+          "en": "International Flower Festival"
         },
-        "date": { "ru": "11-13 июня", "en": "June 11-13" },
+        "date": { "ru": "11-13 июня", "en": "June, 11-13" },
         "files": [
           "1 (21).jpg",
           "1 (3).jpg",
@@ -1757,7 +1757,7 @@
         "src": "photos/2018/russia_day_alb_2018",
         "cover": "photos/2018/russia_day.jpg",
         "description": { "ru": "День России", "en": "Russia Day" },
-        "date": { "ru": "12 июня", "en": "June 12" },
+        "date": { "ru": "12 июня", "en": "June, 12" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1786,7 +1786,7 @@
         "src": "photos/2018/jazz_alb_2018",
         "cover": "photos/2018/jazz.jpg",
         "description": { "ru": "Джаз на Неве", "en": "Jazz on Neva" },
-        "date": { "ru": "22 июля", "en": "July 22" },
+        "date": { "ru": "22 июля", "en": "July, 22" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1805,7 +1805,7 @@
         "src": "photos/2018/new_year_night_alb_2018",
         "cover": "photos/2018/ded_moroz.jpg",
         "description": { "ru": "Новогодняя ночь", "en": "New Year Night" },
-        "date": { "ru": "21 и 31 декабря)", "en": "December 21 and 31" },
+        "date": { "ru": "21 и 31 декабря)", "en": "December, 21 and 31" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1830,7 +1830,7 @@
           "ru": "Международный Фестиваль цветов",
           "en": "International Flower Festival"
         },
-        "date": { "ru": "12 июня", "en": "June 12" },
+        "date": { "ru": "12 июня", "en": "June, 12" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1859,7 +1859,7 @@
         "src": "photos/2017/aurora_alb_2017",
         "cover": "projects/aurora.jpg",
         "description": { "ru": "Аврора'17", "en": "Aurora'17" },
-        "date": { "ru": "4 и 5 ноября", "en": "November 4 and 5" },
+        "date": { "ru": "4 и 5 ноября", "en": "November, 4 and 5" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
@@ -1885,7 +1885,7 @@
         },
         "date": {
           "ru": "Дни Москвы в Будапеште | 22 ноября",
-          "en": "Days of Moscow in Budapest | November 22"
+          "en": "Days of Moscow in Budapest | November, 22"
         },
         "files": ["1 (3).jpg", "1 (1).jpg", "1 (2).jpg"]
       },
@@ -1894,7 +1894,7 @@
         "src": "photos/2017/new_year_night_alb_2017",
         "cover": "photos/2017/ded_moroz.jpg",
         "description": { "ru": "Новогодняя ночь", "en": "New Year Night" },
-        "date": { "ru": "23 и 31 декабря)", "en": "December 23 and 31" },
+        "date": { "ru": "23 и 31 декабря)", "en": "December, 23 and 31" },
         "files": [
           "1 (3).jpg",
           "1 (4).jpg",
