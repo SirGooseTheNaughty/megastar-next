@@ -2,6 +2,7 @@ import React from "react";
 
 import { initTranslations } from '@/app/i18n';
 import { Header } from '@/components/header';
+import { Burger } from "@/components/burger";
 import { Hero } from "@/components/hero";
 import { Heading } from "@/components/heading";
 import { Grid } from "@/components/grid";
@@ -36,6 +37,7 @@ export default async function Home({ params: { locale }}: any) {
     >
       <main>
         <Header events={events} albums={albums} projects={projects} t={t} locale={locale} />
+        <Burger locale={locale} />
         <Hero locale={locale} />
         <Heading id='events' t={t} />
         <Grid>

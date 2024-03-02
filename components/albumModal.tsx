@@ -85,7 +85,7 @@ export const AlbumModalContent = ({
     }, [openedPhotoIndex, photos, year, description, locale]);
 
     return (
-        <div className='modal fixed top-0 left-0 w-full h-full overflow-y-auto py-20 bg-lightblue bg-opacity-50 z-50 backdrop-blur-md'>
+        <div className='modal fixed top-0 left-0 w-full h-full overflow-y-auto py-20 bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'>
             {content}
         </div>
     );

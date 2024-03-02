@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from '@/public/logo.svg';
 
 export const Footer = (
     {
@@ -20,7 +21,7 @@ export const Footer = (
         <div className="grid grid-cols-[auto_auto_auto_auto_auto] p-20">
             <Link href="/" className="h-full block overflow-hidden">
                 <Image
-                    src="/logo.png"
+                    src={Logo}
                     alt="Megastar logo"
                     width={200}
                     height={200}

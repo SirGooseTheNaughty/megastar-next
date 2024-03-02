@@ -143,7 +143,7 @@ export const EventModalContent = ({
     };
 
     return (
-        <div className='modal fixed top-0 left-0 w-full h-full grid items-center bg-lightblue bg-opacity-50 z-50 backdrop-blur-md'>
+        <div className='modal fixed top-0 left-0 w-full h-full grid items-center bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'>
             <div className='relative bg-lightblue w-10/12 mx-auto px-16 py-12'>
                 <Link href='/' scroll={false} className='absolute top-4 right-4'>
                     <Image src={Close} width={32} alt='close icon' />

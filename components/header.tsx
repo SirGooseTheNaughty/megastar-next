@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MenuDropdownItem } from "./menuDropdownItem";
 import { MenuYearDropdownItem } from "./menuYearDropdownItem";
 import { Language } from "./language";
+import Logo from '@/public/logo.svg';
 
 export const Header = ({
     events = [],
@@ -20,7 +21,7 @@ export const Header = ({
 }) => {
     const MenuItem = ({ title, link, children }: any) => (
         <div className="relative group h-full">
-            <a href={link} className="flex h-full items-center gap-2 uppercase text-lg">
+            <a href={link} className="flex h-full items-center gap-2 uppercase text-xl">
                 {t(title)}
                 {children && <Image src="/nav_arrow.png" width={13} height={3} alt="" className="duration-200 group-hover:rotate-180" />}
             </a>
@@ -33,16 +34,16 @@ export const Header = ({
     );
 
     return (
-        <header className="flex justify-between relative w-full h-32 px-20 z-10">
+        <header id='start' className="flex justify-between relative w-full h-32 px-20 z-10">
             <Link href="/" className="h-full block overflow-hidden">
                 <Image
-                    src="/logo.png"
+                    src={Logo}
                     alt="Megastar logo"
                     width={135}
                     height={135}
                 />
             </Link>
-            <nav className="hidden md:flex items-center justify-center gap-4">
+            <nav className="hidden lg:flex items-center justify-center gap-4">
                 <MenuItem title='events' link='#events'>
                     {events.map(({ id, description }: any) => <MenuDropdownItem key={id} link={`?event=${id}`} text={description[locale]} />)}
                 </MenuItem>
@@ -55,7 +56,7 @@ export const Header = ({
                 <MenuItem title='videos' link='#videos'></MenuItem>
                 <MenuItem title='contacts' link='#contacts'></MenuItem>
             </nav>
-            <div className="hidden md:flex items-center justify-center gap-2 text-lg">
+            <div className="hidden lg:flex items-center justify-center gap-2 text-lg">
                 <Language locale={locale} language={'en'} />
                 <Language locale={locale} language={'ru'} />
             </div>
