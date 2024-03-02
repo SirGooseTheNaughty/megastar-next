@@ -32,7 +32,10 @@
       "en": "St.Petersburg Chorus & Dance Ensemble of Russian Army"
     },
     "date": { "ru": "", "en": "" },
-    "vid": ""
+    "booklet": {
+      "ru": "chorus.pdf",
+      "en": "chorus_eng.pdf"
+    }
   },
   {
     "id": "ballet",
@@ -47,7 +50,10 @@
       "en": "St.Petersburg Imperial Ballet"
     },
     "date": { "ru": "", "en": "" },
-    "vid": ""
+    "booklet": {
+      "ru": "ballet.pdf",
+      "en": "ballet_eng.pdf"
+    }
   },
   {
     "id": "ice_opera",
@@ -59,7 +65,11 @@
     },
     "description": { "ru": "Ice Opera", "en": "Ice Opera" },
     "date": { "ru": "", "en": "" },
-    "vid": "videos/ice_opera.mp4"
+    "vid": "videos/ice_opera.mp4",
+    "booklet": {
+      "ru": "ice_opera.pdf",
+      "en": "ice_opera_eng.pdf"
+    }
   },
   {
     "id": "kids_show",
@@ -74,6 +84,10 @@
       "en": "Kids Show on Ice @MAZE"
     },
     "date": { "ru": "", "en": "" },
-    "vid": "videos/kids_show.mp4"
+    "vid": "videos/kids_show.mp4",
+    "booklet": {
+      "ru": "kids_show.pdf",
+      "en": "kids_show_eng.pdf"
+    }
   }
 ]

@@ -37,7 +37,8 @@ export type EventData = {
     cover: OptionallyLocalized,
     description: Localized,
     date?: Localized,
-    vid: string,
+    vid?: string,
+    booklet?: Localized,
 };
 
 export type Album = {

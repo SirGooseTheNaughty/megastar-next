@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import cn from 'classnames';
 import { Grid } from "./grid";
 import { Tile } from "./tile";
-import { EventType, YEAR_EVENT } from "@/app/types";
+import { AlbumYear, EventType, YEAR_EVENT } from "@/app/types";
 
-export const Photos = ({ albums = [], locale, rootUrl = '' }: any) => {
+export const Photos = ({ albums = [], locale }: { albums: AlbumYear[], locale: string }) => {
     const [year, setYear] = useState(albums?.[0].year);
     const activeYearAlbums = albums?.find(({ year: albumYear }) => albumYear === year)?.albums || [];
 
@@ -39,7 +39,7 @@ export const Photos = ({ albums = [], locale, rootUrl = '' }: any) => {
             </div>
             <Grid>
                 {activeYearAlbums.map(({ id, description, date, cover }) => (
-                    <Tile key={id} id={id} type={EventType.ALBUM} year={year} title={description[locale]} text={date[locale]} image={cover} rootUrl={rootUrl} />
+                    <Tile key={id} id={id} type={EventType.ALBUM} year={year} title={description[locale]} text={date[locale]} image={cover} />
                 ))}
             </Grid>
         </div>

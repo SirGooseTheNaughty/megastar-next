@@ -25,6 +25,12 @@ import { AlbumModal } from "@/components/albumModal";
 
 const i18nNamespaces = ['common'];
 
+export const ENV_VARS = {
+  SRC_PHOTOS: process.env.NEXT_PUBLIC_SRC_PHOTOS,
+  SRC_VIDEOS: process.env.NEXT_PUBLIC_SRC_VIDEOS,
+  SRC_BOOKLETS: process.env.NEXT_PUBLIC_SRC_BOOKLETS,
+};
+
 export default async function Home({ params: { locale }}: any) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
   // const albums = await getAlbumsData(albumsWithoutData);
@@ -52,7 +58,7 @@ export default async function Home({ params: { locale }}: any) {
           ))}
         </Grid>
         <Heading id='photos' t={t} />
-        <Photos albums={albums} locale={locale} rootUrl={process.env.SRC_PHOTOS} />
+        <Photos albums={albums} locale={locale} />
         <Heading id='videos' t={t} />
         <Grid>
           {videos.map(({ id, description, cover }) => (
@@ -67,13 +73,10 @@ export default async function Home({ params: { locale }}: any) {
           projects={projects}
           videos={videos}
           locale={locale}
-          imageRootUrl={process.env.SRC_PHOTOS}
-          videoRootUrl={process.env.SRC_VIDEOS}
         />
         <AlbumModal
           albums={albums}
           locale={locale}
-          imageRootUrl={process.env.SRC_PHOTOS}
         />
       </main>
       <ScrollBarWidth />

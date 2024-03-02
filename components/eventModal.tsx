@@ -11,21 +11,18 @@ import { EventType, EventData } from '@/app/types';
 import Close from '../public/close.svg';
 import Play from '../public/play.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
+import { ENV_VARS } from '@/app/[locale]/page';
 
 export const EventModal = ({
     events = [],
     projects = [],
     videos = [],
     locale,
-    imageRootUrl,
-    videoRootUrl,
 }: {
     events: EventData[],
     projects: EventData[],
     videos: EventData[],
     locale: string,
-    imageRootUrl?: string,
-    videoRootUrl?: string,
 }) => {
     const searchParams = useSearchParams();
     const event = searchParams.get(EventType.EVENT);
@@ -49,19 +46,15 @@ export const EventModal = ({
         return null;
     }
 
-    return <EventModalContent data={data} locale={locale} imageRootUrl={imageRootUrl} videoRootUrl={videoRootUrl} />;
+    return <EventModalContent data={data} locale={locale} />;
 };
 
 export const EventModalContent = ({
     data,
     locale,
-    imageRootUrl,
-    videoRootUrl,
 }: {
     data: EventData,
     locale: string,
-    imageRootUrl?: string,
-    videoRootUrl?: string,
 }) => {
     const { t } = useTranslation();
     const [isPlaying, setIsPlaying] = useState(false);
@@ -99,7 +92,7 @@ export const EventModalContent = ({
         return (
             <div className='absolute top-0 left-0 w-full h-full'>
                 <Image
-                    src={`${imageRootUrl}/${coverUrl}`}
+                    src={`${ENV_VARS.SRC_PHOTOS}/${coverUrl}`}
                     width={1200}
                     height={800}
                     alt='close icon'
@@ -149,7 +142,7 @@ export const EventModalContent = ({
                     <Image src={Close} width={32} alt='close icon' />
                 </Link>
                 <div className='relative'>
-                    <video controls src={`${videoRootUrl}/${vid}`} ref={videoRef} className='w-full h-60vh max-h-[70vh]' />
+                    <video controls src={`${ENV_VARS.SRC_VIDEOS}/${vid}`} ref={videoRef} className='w-full h-60vh max-h-[70vh]' />
                     {renderCover()}
                 </div>
                 <h3 className='text-4xl my-4'>{description[locale]}</h3>

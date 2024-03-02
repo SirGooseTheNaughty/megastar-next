@@ -8,15 +8,14 @@ import { EventType, AlbumYear, YEAR, Album } from '@/app/types';
 import Close from '../public/close.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
 import { PhotoModal } from './photoModal';
+import { ENV_VARS } from '@/app/[locale]/page';
 
 export const AlbumModal = ({
     albums = [],
     locale,
-    imageRootUrl,
 }: {
     albums: AlbumYear[],
     locale: string,
-    imageRootUrl?: string,
 }) => {
     const searchParams = useSearchParams();
     const year = searchParams.get(YEAR);
@@ -34,26 +33,24 @@ export const AlbumModal = ({
         return null;
     }
 
-    return <AlbumModalContent year={year as string} data={data} locale={locale} imageRootUrl={imageRootUrl} />;
+    return <AlbumModalContent year={year as string} data={data} locale={locale} />;
 };
 
 export const AlbumModalContent = ({
     year,
     data,
     locale,
-    imageRootUrl,
 }: {
     year: string,
     data: Album,
     locale: string,
-    imageRootUrl?: string,
 }) => {
     useNoScroll();
     const [openedPhotoIndex, setOpenedPhotoIndex] = useState<number | null>(null);
     const closePhoto = () => setOpenedPhotoIndex(null);
 
     const { id, description, files = [] } = data;
-    const photos = files.map((fileName: string) => `${imageRootUrl}/photos/${year}/${id}/${fileName}`);
+    const photos = files.map((fileName: string) => `${ENV_VARS.SRC_PHOTOS}/photos/${year}/${id}/${fileName}`);
 
     const content = useMemo(() => {
         if (openedPhotoIndex === null) {

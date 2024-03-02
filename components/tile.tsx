@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { EventType } from "@/app/types";
+import { ENV_VARS } from "@/app/[locale]/page";
 
 export const Tile = (
     {
@@ -10,7 +11,6 @@ export const Tile = (
         text,
         image,
         year,
-        rootUrl = process.env.SRC_PHOTOS
     }: {
         id: string;
         type: EventType;
@@ -18,14 +18,13 @@ export const Tile = (
         text?: string;
         image?: string;
         year?: string;
-        rootUrl?: string;
     }
 ) => {
     const link = year ? `?year=${year}&${type}=${id}` : `?${type}=${id}`;
     return (
         <Link href={link} scroll={false} className="flex relative w-full md:w-[49%] xl:w-[32%] aspect-4/3 cursor-pointer skeleton-animation">
             {image && (
-                <Image src={`${rootUrl}/${image}`} alt={title} width={400} height={300} className="absolute w-full h-full object-cover" />
+                <Image src={`${ENV_VARS.SRC_PHOTOS}/${image}`} alt={title} width={400} height={300} className="absolute w-full h-full object-cover" />
             )}
             <div
                 className="h-full w-full flex flex-col justify-center align-start p-8 z-10 
