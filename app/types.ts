@@ -16,6 +16,7 @@ export enum ExternalLinkApp {
     VK = 'vk',
     WEB = 'web',
     IG = 'ig',
+    BOOKLET = 'booklet',
 };
 
 export type ExternalLink = {

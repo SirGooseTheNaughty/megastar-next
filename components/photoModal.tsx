@@ -3,6 +3,7 @@ import Image from 'next/image';
 import cn from "classnames";
 import Close from '../public/close.svg';
 import ArrowRight from '../public/arrow-right.svg';
+import { CloseIcon } from "./closeIcon";
 
 const arrowClassNames = `
     absolute top-1/2 -translate-y-1/2 
@@ -19,13 +20,13 @@ export const PhotoModal = ({ photos = [], initialIndex = 0, closePhoto }: { phot
 
     return (
         <div className='grid place-items-center relative w-max bg-lightblue mx-auto px-16 py-12'>
-            <Image src={Close} width={32} alt='close icon' className='absolute top-4 right-4 cursor-pointer' onClick={closePhoto} />
+            <CloseIcon onClick={closePhoto} />
             <Image
                 src={photoUrl}
                 width={1200}
                 height={900}
                 alt=''
-                className='w-auto h-[75vh]'
+                className='w-auto max-h-[75vh] max-w-[70vw] min-w-[400px] min-h-[300px] skeleton-animation'
             />
             <div className={cn(arrowClassNames, '-left-20')}>
                 <Image src={ArrowRight} width={32} alt='close icon' onClick={previousPhoto} className="-scale-100" />

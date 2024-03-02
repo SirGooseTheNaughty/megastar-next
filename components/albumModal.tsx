@@ -9,6 +9,7 @@ import Close from '../public/close.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
 import { PhotoModal } from './photoModal';
 import { ENV_VARS } from '@/app/[locale]/page';
+import { CloseIcon } from './closeIcon';
 
 export const AlbumModal = ({
     albums = [],
@@ -56,9 +57,7 @@ export const AlbumModalContent = ({
         if (openedPhotoIndex === null) {
             return (
                 <div className='relative bg-lightblue w-10/12 mx-auto px-16 py-12'>
-                    <Link href='/' scroll={false} className='absolute top-4 right-4'>
-                        <Image src={Close} width={32} alt='close icon' />
-                    </Link>
+                    <CloseIcon />
                     <h3 className='text-3xl'>{description[locale]} | {year}</h3>
                     <div className="flex flex-wrap justify-center gap-x-[2%] gap-y-8 py-10">
                         {photos.map((imageUrl, index) => (
@@ -68,7 +67,7 @@ export const AlbumModalContent = ({
                                 width={400}
                                 height={300}
                                 alt=''
-                                className='w-[32%] aspect-4/3 cursor-pointer'
+                                className='w-full md:w-[49%] xl:w-[32%] aspect-4/3 cursor-pointer skeleton-animation'
                                 onClick={() => setOpenedPhotoIndex(index)}
                             />
                         ))}

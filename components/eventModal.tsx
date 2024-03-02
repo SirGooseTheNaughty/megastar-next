@@ -7,7 +7,8 @@ import { useSearchParams } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { ExternalLink } from './externalLink';
 import { CopyLink } from './copyLink';
-import { EventType, EventData } from '@/app/types';
+import { CloseIcon } from './closeIcon';
+import { EventType, EventData, ExternalLinkApp } from '@/app/types';
 import Close from '../public/close.svg';
 import Play from '../public/play.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
@@ -59,7 +60,7 @@ export const EventModalContent = ({
     const { t } = useTranslation();
     const [isPlaying, setIsPlaying] = useState(false);
     const videoRef = useRef<HTMLVideoElement | null>(null);
-    const { description, albums, exlinks, vid, cover } = data;
+    const { description, albums, exlinks, vid, cover, booklet } = data;
 
     useNoScroll();
 
@@ -132,21 +133,33 @@ export const EventModalContent = ({
                 <p className='capitalize'>{t('links')}:</p>
                 {exlinks.map(({ app, link }) => <ExternalLink key={app} app={app} link={link} />)}
             </div>
-        )
+        );
+    };
+
+    const renderBooklet = () => {
+        if (!booklet) {
+            return null;
+        }
+
+        return (
+            <div className='flex items-center gap-2 mr-4'>
+                <p className='capitalize'>{t('booklet')}:</p>
+                <ExternalLink app={ExternalLinkApp.BOOKLET} link={`${ENV_VARS.SRC_BOOKLETS}/${booklet[locale]}`} />
+            </div>
+        );
     };
 
     return (
         <div className='modal fixed top-0 left-0 w-full h-full grid items-center bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'>
             <div className='relative bg-lightblue w-10/12 mx-auto px-16 py-12'>
-                <Link href='/' scroll={false} className='absolute top-4 right-4'>
-                    <Image src={Close} width={32} alt='close icon' />
-                </Link>
+                <CloseIcon />
                 <div className='relative'>
                     <video controls src={`${ENV_VARS.SRC_VIDEOS}/${vid}`} ref={videoRef} className='w-full h-60vh max-h-[70vh]' />
                     {renderCover()}
                 </div>
                 <h3 className='text-4xl my-4'>{description[locale]}</h3>
                 <div className='flex justify-end text-2xl'>
+                    {renderBooklet()}
                     {renderPhotos()}
                     <div className='flex gap-8'>
                         {renderExternalLinks()}

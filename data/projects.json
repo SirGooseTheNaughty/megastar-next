@@ -17,7 +17,7 @@
     },
     "description": { "ru": "Show Opera", "en": "Show Opera" },
     "date": { "ru": "", "en": "" },
-    "vid": "videos/show_opera.mp4"
+    "vid": "show_opera.mp4"
   },
   {
     "id": "chorus",
@@ -65,7 +65,7 @@
     },
     "description": { "ru": "Ice Opera", "en": "Ice Opera" },
     "date": { "ru": "", "en": "" },
-    "vid": "videos/ice_opera.mp4",
+    "vid": "ice_opera.mp4",
     "booklet": {
       "ru": "ice_opera.pdf",
       "en": "ice_opera_eng.pdf"
@@ -84,7 +84,7 @@
       "en": "Kids Show on Ice @MAZE"
     },
     "date": { "ru": "", "en": "" },
-    "vid": "videos/kids_show.mp4",
+    "vid": "kids_show.mp4",
     "booklet": {
       "ru": "kids_show.pdf",
       "en": "kids_show_eng.pdf"
