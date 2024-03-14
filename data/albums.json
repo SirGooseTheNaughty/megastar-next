@@ -75,6 +75,16 @@
                 "en": "New Year. Palace Square and Kronstadt"
               },
               "date": { "ru": "23 декабря - 8 января", "en": "December, 23 - January, 8" }
+            },
+            {
+              "id": "vdnh_alb_2023",
+              "src": "photos/2023/vdnh_alb_2023",
+              "cover": "photos/2023/vdnh_alb_2023/1 (1).jpg",
+              "description": {
+                "ru": "Санкт-Петербург на международной выставке «Россия»",
+                "en": "St. Petersburg at the “Russia” exhibition"
+              },
+              "date": { "ru": "", "en": "" }
             }
         ]
     },

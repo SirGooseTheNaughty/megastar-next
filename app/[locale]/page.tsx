@@ -25,7 +25,7 @@ import { AlbumModal } from "@/components/albumModal";
 
 const i18nNamespaces = ['common'];
 
-export const ENV_VARS = {
+export const ENV_VARS: any = {
   SRC_PHOTOS: process.env.NEXT_PUBLIC_SRC_PHOTOS,
   SRC_VIDEOS: process.env.NEXT_PUBLIC_SRC_VIDEOS,
   SRC_BOOKLETS: process.env.NEXT_PUBLIC_SRC_BOOKLETS,

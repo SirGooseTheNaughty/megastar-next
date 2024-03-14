@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from '@/public/logo.svg';
 
+import { FooterYearItem } from "./footerYear";
+
 export const Footer = (
     {
         events = [],
@@ -34,7 +36,7 @@ export const Footer = (
                 {projects.map(({ id, description }: any) => <FooterNavItem key={id} link={`#${id}`} text={description[locale]} />)}
             </FooterColumn>
             <FooterColumn title={t('photos')} link='#photos'>
-                {albums.map(({ year }: any) => <FooterNavItem key={year} link={`#${year}`} text={year} />)}
+                {albums.map(({ year }: any) => <FooterYearItem key={year} year={year} />)}
             </FooterColumn>
             <ul className="hidden lg:block">
                 <a href='#videos'>
@@ -59,8 +61,8 @@ const FooterColumn = ({ title, link, children = null }: any) => {
     );
 };
 
-const FooterNavItem = ({ link, text }: any) => (
+export const FooterNavItem = ({ link, text, onClick }: any) => (
     <li className="">
-        <a href={link} className="block text-sm py-1 duration-200 hover:text-purple">{text}</a>
+        <a href={link} className="block text-sm py-1 duration-200 hover:text-purple" onClick={onClick}>{text}</a>
     </li>
 );
