@@ -3,24 +3,32 @@
     "id": "wonder_of_light",
     "albums": [
       {
-        "label": "2022",
-        "id": "wonder_of_light_2022"
+        "year": "2022",
+        "id": "wonder_of_light_alb_2022"
       },
       {
-        "label": "2021",
-        "id": "wonder_of_light_2021"
+        "year": "2021",
+        "id": "wonder_of_light_alb_2021"
       },
       {
-        "label": "2020",
-        "id": "wonder_of_light_2020"
+        "year": "2020",
+        "id": "wonder_of_light_alb_2020"
       },
       {
-        "label": "2019",
-        "id": "wonder_of_light_tus"
+        "year": "2019",
+        "label": {
+          "ru": "2019 | ТЮЗ",
+          "en": "2019 | TUS"
+        },
+        "id": "wonder_of_light_alb_tus"
       },
       {
-        "label": "2019",
-        "id": "wonder_of_light_palace"
+        "year": "2019",
+        "label": {
+          "ru": "2019 | Зимний Дворец",
+          "en": "2019 | Winter palace"
+        },
+        "id": "wonder_of_light_alb_palace"
       }
     ],
     "exlinks": [
@@ -46,13 +54,13 @@
   {
     "id": "christmas_star_fire_fest",
     "albums": [
-      { "label": "2022", "id": "christmas_star_fire_fest_2022" },
-      { "label": "2021", "id": "christmas_star_fire_fest_2021" },
-      { "label": "2020", "id": "christmas_star_fire_fest_2020" },
-      { "label": "2019", "id": "christmas_star_fire_fest_2019" },
-      { "label": "2018", "id": "christmas_star_fire_fest_2018" }
+      { "year": "2022", "id": "christmas_star_fire_fest_alb_2022" },
+      { "year": "2021", "id": "christmas_star_fire_fest_alb_2021" },
+      { "year": "2020", "id": "christmas_star_fire_fest_alb_2020" },
+      { "year": "2019", "id": "christmas_star_fire_fest_alb_2019" },
+      { "year": "2018", "id": "christmas_star_fire_fest_alb_2018" }
     ],
-    "exlinks": [{ "app": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "https://vk.com/festivalfire" }],
     "cover": {
       "ru": "events/fire_fest.jpg",
       "en": "events/fire_fest_eng.jpg"
@@ -67,14 +75,14 @@
   {
     "id": "flower_fest",
     "albums": [
-      { "label": "2023", "id": "flower_fest_2023" },
-      { "label": "2022", "id": "flower_fest_2022" },
-      { "label": "2021", "id": "flower_fest_2021" },
-      { "label": "2020", "id": "flower_fest_2020" },
-      { "label": "2019", "id": "flower_fest_2019" },
-      { "label": "2018", "id": "flower_fest_2018" }
+      { "year": "2023", "id": "flower_fest_alb_2023" },
+      { "year": "2022", "id": "flower_fest_alb_2022" },
+      { "year": "2021", "id": "flower_fest_alb_2021" },
+      { "year": "2020", "id": "flower_fest_alb_2020" },
+      { "year": "2019", "id": "flower_fest_alb_2019" },
+      { "year": "2018", "id": "flower_fest_alb_2018" }
     ],
-    "exlinks": [{ "app": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "https://vk.com/festivalofflowers" }],
     "cover": {
       "ru": "events/flower_fest.jpg",
       "en": "events/flower_fest_eng.jpg"
@@ -89,14 +97,14 @@
   {
     "id": "sup",
     "albums": [
-      { "label": "2023", "id": "sup_2023" },
-      { "label": "2021", "id": "sup_2021" },
-      { "label": "2020", "id": "sup_2020" },
-      { "label": "2019", "id": "sup_2019" }
+      { "year": "2023", "id": "sup_alb_2023" },
+      { "year": "2021", "id": "sup_alb_2021" },
+      { "year": "2020", "id": "sup_alb_2020" },
+      { "year": "2019", "id": "sup_alb_2019" }
     ],
     "exlinks": [
-      { "app": "vk", "link": "" },
-      { "app": "web", "link": "" }
+      { "app": "vk", "link": "https://vk.com/fontankasup" },
+      { "app": "web", "link": "http://fontankasup.ru/" }
     ],
     "cover": {
       "ru": "events/sup.jpg",
@@ -112,10 +120,10 @@
   {
     "id": "IDJazz",
     "albums": [
-      { "label": "2021", "id": "IDJazz_2021" },
-      { "label": "2020", "id": "IDJazz_2020" }
+      { "year": "2021", "id": "IDJazz_alb_2021" },
+      { "year": "2020", "id": "IDJazz_alb_2020" }
     ],
-    "exlinks": [{ "app": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "https://vk.com/idjazz_spb2021" }],
     "cover": {
       "ru": "others/idJazz.jpg",
       "en": "others/idJazz.jpg"
@@ -127,10 +135,10 @@
   {
     "id": "theremin",
     "albums": [
-      { "label": "2021", "id": "theremin_2021" },
-      { "label": "2020", "id": "theremin_2020" }
+      { "year": "2021", "id": "theremin_alb_2021" },
+      { "year": "2020", "id": "theremin_alb_2020" }
     ],
-    "exlinks": [{ "app": "vk", "link": "" }],
+    "exlinks": [{ "app": "vk", "link": "https://vk.com/theremin_fest" }],
     "cover": {
       "ru": "others/theremin.jpg",
       "en": "others/theremin.jpg"

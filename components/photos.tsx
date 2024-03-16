@@ -25,7 +25,7 @@ export const Photos = ({ albums = [], locale }: { albums: AlbumYear[], locale: s
 
     return (
         <div>
-            <div className="flex justify-center gap-4 text-xl md:text-2xl lg:text-3xl mt-20 -mb-10">
+            <div className="flex justify-center flex-wrap gap-x-4 text-xl px-8 md:px-0 md:text-2xl lg:text-3xl mt-20 lg:-mb-10">
                 {albums.map(({ year: albumYear }) => (
                     <button
                         key={albumYear}
@@ -39,7 +39,7 @@ export const Photos = ({ albums = [], locale }: { albums: AlbumYear[], locale: s
             </div>
             <Grid>
                 {activeYearAlbums.map(({ id, description, date, cover }) => (
-                    <Tile key={id} id={id} type={EventType.ALBUM} year={year} title={description[locale]} text={date[locale]} image={cover} />
+                    <Tile key={id} id={id} type={EventType.ALBUM} year={year} title={description[locale]} text={date[locale]} image={cover} noHover />
                 ))}
             </Grid>
         </div>

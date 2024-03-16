@@ -20,7 +20,7 @@ export const Footer = (
     }
 ) => {
     return (
-        <div className="grid place-items-center lg:place-items-start lg:grid-cols-[auto_auto_auto_auto_auto] gap-4 lg:p-20">
+        <div className="grid place-items-center lg:place-items-start lg:grid-cols-[auto_auto_auto_auto_auto] gap-4 lg:p-20 lg:pb-5">
             <Link href="/" className="h-full block overflow-hidden">
                 <Image
                     src={Logo}

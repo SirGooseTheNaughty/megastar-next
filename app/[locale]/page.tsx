@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Suspense } from "react";
 import { initTranslations } from '@/app/i18n';
 import { Header } from '@/components/header';
 import { Burger } from "@/components/burger";
@@ -24,12 +25,6 @@ import videos from '@/data/videos.json';
 import { AlbumModal } from "@/components/albumModal";
 
 const i18nNamespaces = ['common'];
-
-export const ENV_VARS: any = {
-  SRC_PHOTOS: process.env.NEXT_PUBLIC_SRC_PHOTOS,
-  SRC_VIDEOS: process.env.NEXT_PUBLIC_SRC_VIDEOS,
-  SRC_BOOKLETS: process.env.NEXT_PUBLIC_SRC_BOOKLETS,
-};
 
 export default async function Home({ params: { locale }}: any) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
@@ -68,16 +63,18 @@ export default async function Home({ params: { locale }}: any) {
         <Heading id='contacts' t={t} />
         <Contacts />
         <Footer events={events} projects={projects} albums={albums} t={t} locale={locale} />
-        <EventModal
-          events={events}
-          projects={projects}
-          videos={videos}
-          locale={locale}
-        />
-        <AlbumModal
-          albums={albums}
-          locale={locale}
-        />
+        <Suspense>
+          <EventModal
+            events={events}
+            projects={projects}
+            videos={videos}
+            locale={locale}
+          />
+          <AlbumModal
+            albums={albums}
+            locale={locale}
+          />
+        </Suspense>
       </main>
       <ScrollBarWidth />
     </TranslationsProvider>

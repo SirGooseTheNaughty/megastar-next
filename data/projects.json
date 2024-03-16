@@ -2,27 +2,24 @@
   {
     "id": "show_opera",
     "albums": [
-      { "label": "2020", "id": "show_opera_2020" },
-      { "label": "2019", "id": "show_opera_2019" },
-      { "label": "2018", "id": "show_opera_2018" },
-      { "label": "2017", "id": "show_opera_2017" }
+      { "year": "2020", "id": "show_opera_alb_2020" },
+      { "year": "2019", "id": "show_opera_alb_2019" },
+      { "year": "2018", "id": "show_opera_alb_2018" },
+      { "year": "2017", "id": "show_opera_alb_2017" }
     ],
     "exlinks": [
-      { "app": "vk", "link": "" },
-      { "app": "web", "link": "" }
+      { "app": "vk", "link": "https://vk.com/show_opera" },
+      { "app": "web", "link": "https://showopera.com/" }
     ],
     "cover": {
       "ru": "projects/show_opera.jpg",
       "en": "projects/show_opera.jpg"
     },
     "description": { "ru": "Show Opera", "en": "Show Opera" },
-    "date": { "ru": "", "en": "" },
     "vid": "show_opera.mp4"
   },
   {
     "id": "chorus",
-    "albums": [{ "label": "", "id": "chorus_" }],
-    "exlinks": [{ "app": "", "link": "" }],
     "cover": {
       "ru": "projects/chorus.jpg",
       "en": "projects/chorus.jpg"
@@ -31,7 +28,6 @@
       "ru": "Ансамбль песни и пляски Западного Военного округа",
       "en": "St.Petersburg Chorus & Dance Ensemble of Russian Army"
     },
-    "date": { "ru": "", "en": "" },
     "booklet": {
       "ru": "chorus.pdf",
       "en": "chorus_eng.pdf"
@@ -39,8 +35,6 @@
   },
   {
     "id": "ballet",
-    "albums": [{ "label": "", "id": "ballet_" }],
-    "exlinks": [{ "app": "", "link": "" }],
     "cover": {
       "ru": "projects/ballet.png",
       "en": "projects/ballet.png"
@@ -49,7 +43,6 @@
       "ru": "Императорский балет Санкт-Петербурга",
       "en": "St.Petersburg Imperial Ballet"
     },
-    "date": { "ru": "", "en": "" },
     "booklet": {
       "ru": "ballet.pdf",
       "en": "ballet_eng.pdf"
@@ -57,14 +50,12 @@
   },
   {
     "id": "ice_opera",
-    "albums": [{ "label": "2021", "id": "ice_opera_2021" }],
-    "exlinks": [{ "app": "", "link": "" }],
+    "albums": [{ "year": "2021", "id": "ice_opera_alb_2021" }],
     "cover": {
       "ru": "projects/ice_opera.jpg",
       "en": "projects/ice_opera.jpg"
     },
     "description": { "ru": "Ice Opera", "en": "Ice Opera" },
-    "date": { "ru": "", "en": "" },
     "vid": "ice_opera.mp4",
     "booklet": {
       "ru": "ice_opera.pdf",
@@ -73,8 +64,7 @@
   },
   {
     "id": "kids_show",
-    "albums": [{ "label": "2021", "id": "kids_show_2021" }],
-    "exlinks": [{ "app": "", "link": "" }],
+    "albums": [{ "year": "2021", "id": "kids_show_alb_2021" }],
     "cover": {
       "ru": "projects/kids_show.jpg",
       "en": "projects/kids_show.jpg"
@@ -83,7 +73,6 @@
       "ru": "Детское шоу на льду @MAZE",
       "en": "Kids Show on Ice @MAZE"
     },
-    "date": { "ru": "", "en": "" },
     "vid": "kids_show.mp4",
     "booklet": {
       "ru": "kids_show.pdf",

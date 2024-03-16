@@ -8,8 +8,9 @@ export enum EventType {
 export const YEAR = 'year';
 
 export type AlbumLink = {
-    label: string,
+    year: string,
     id: string,
+    label?: Localized,
 };
 
 export enum ExternalLinkApp {

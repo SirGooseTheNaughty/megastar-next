@@ -2,13 +2,10 @@
 
 import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { EventType, AlbumYear, YEAR, Album } from '@/app/types';
-import Close from '../public/close.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
 import { PhotoModal } from './photoModal';
-import { ENV_VARS } from '@/app/[locale]/page';
 import { CloseIcon } from './closeIcon';
 
 export const AlbumModal = ({
@@ -51,7 +48,7 @@ export const AlbumModalContent = ({
     const closePhoto = () => setOpenedPhotoIndex(null);
 
     const { id, description, files = [] } = data;
-    const photos = files.map((fileName: string) => `${ENV_VARS.SRC_PHOTOS}/photos/${year}/${id}/${fileName}`);
+    const photos = files.map((fileName: string) => `${process.env.NEXT_PUBLIC_SRC_PHOTOS}/photos/${year}/${id}/${fileName}`);
 
     const content = useMemo(() => {
         if (openedPhotoIndex === null) {
@@ -61,15 +58,19 @@ export const AlbumModalContent = ({
                     <h3 className='text-3xl'>{description[locale]} | {year}</h3>
                     <div className="flex flex-wrap justify-center gap-x-[2%] gap-y-8 py-10">
                         {photos.map((imageUrl, index) => (
-                            <Image
+                            <div
                                 key={imageUrl}
-                                src={imageUrl}
-                                width={400}
-                                height={300}
-                                alt=''
-                                className='w-full md:w-[49%] xl:w-[32%] aspect-4/3 cursor-pointer skeleton-animation'
-                                onClick={() => setOpenedPhotoIndex(index)}
-                            />
+                                className='relative w-full md:w-[49%] xl:w-[32%] aspect-4/3 skeleton-animation'
+                            >
+                                <Image
+                                    src={imageUrl}
+                                    width={400}
+                                    height={300}
+                                    alt=''
+                                    className='relative w-full h-full cursor-pointer z-10'
+                                    onClick={() => setOpenedPhotoIndex(index)}
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>

@@ -48,7 +48,7 @@ export const Header = ({
                     {events.map(({ id, description }: any) => <MenuDropdownItem key={id} link={`?event=${id}`} text={description[locale]} />)}
                 </MenuItem>
                 <MenuItem title='projects' link='#projects'>
-                    {projects.map(({ id, description }: any) => <MenuDropdownItem key={id} link={`?event=${id}`} text={description[locale]} />)}
+                    {projects.map(({ id, description }: any) => <MenuDropdownItem key={id} link={`?project=${id}`} text={description[locale]} />)}
                 </MenuItem>
                 <MenuItem title='photos' link='#photos'>
                     {albums.map(({ year }: any) => <MenuYearDropdownItem key={year} link='#photos' year={year} />)}

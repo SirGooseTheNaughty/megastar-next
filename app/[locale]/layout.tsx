@@ -9,6 +9,7 @@ const lato = Lato({ weight: ['300', '400'], subsets: ['latin', 'latin-ext'] });
 export const metadata: Metadata = {
   title: "Megastar Group",
   description: "Welcome to the official cite for Megastar Group.",
+  metadataBase: new URL('https://megastar-group.ru/'),
   openGraph: {
     type: "website",
     title: "Megastar Group",

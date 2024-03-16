@@ -9,10 +9,8 @@ import { ExternalLink } from './externalLink';
 import { CopyLink } from './copyLink';
 import { CloseIcon } from './closeIcon';
 import { EventType, EventData, ExternalLinkApp } from '@/app/types';
-import Close from '../public/close.svg';
 import Play from '../public/play.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
-import { ENV_VARS } from '@/app/[locale]/page';
 
 export const EventModal = ({
     events = [],
@@ -93,7 +91,7 @@ export const EventModalContent = ({
         return (
             <div className='absolute top-0 left-0 w-full h-full'>
                 <Image
-                    src={`${ENV_VARS.SRC_PHOTOS}/${coverUrl}`}
+                    src={`${process.env.NEXT_PUBLIC_SRC_PHOTOS}/${coverUrl}`}
                     width={1200}
                     height={800}
                     alt='close icon'
@@ -116,9 +114,15 @@ export const EventModalContent = ({
         }
 
         return (
-            <div className='flex gap-3 mr-auto'>
+            <div className='flex gap-2 lg:gap-3'>
                 <div className='capitalize'>{t('photos')}:</div>
-                {albums.map(({ label, id: albumId }) => <Link key={albumId} href={`?${EventType.ALBUM}=${albumId}`} className='underline'>{label}</Link>)}
+                {albums.map(({ year, label, id: albumId }) => (
+                    <Link
+                        key={albumId}
+                        href={`?year=${year}&${EventType.ALBUM}=${albumId}`}
+                        className='underline truncate max-w-24 lg:max-w-none'
+                    >{label?.[locale] || year}</Link>
+                ))}
             </div>
         );
     };
@@ -144,29 +148,31 @@ export const EventModalContent = ({
         return (
             <div className='flex items-center gap-2 mr-4'>
                 <p className='capitalize'>{t('booklet')}:</p>
-                <ExternalLink app={ExternalLinkApp.BOOKLET} link={`${ENV_VARS.SRC_BOOKLETS}/${booklet[locale]}`} />
+                <ExternalLink app={ExternalLinkApp.BOOKLET} link={`${process.env.NEXT_PUBLIC_SRC_BOOKLETS}/${booklet[locale]}`} />
             </div>
         );
     };
 
     return (
         <div className='modal fixed top-0 left-0 w-full h-full grid items-center bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'>
-            <div className='relative bg-lightblue w-10/12 mx-auto px-16 py-12'>
+            <div className='relative bg-lightblue w-11/12 lg:w-10/12 mx-auto p-6 lg:px-16 lg:py-12'>
                 <CloseIcon />
                 <div className='relative'>
-                    <video controls src={`${ENV_VARS.SRC_VIDEOS}/${vid}`} ref={videoRef} className='w-full h-60vh max-h-[70vh]' />
+                    <video controls src={`${process.env.NEXT_PUBLIC_SRC_VIDEOS}/${vid}`} ref={videoRef} className='w-full h-60vh max-h-[70vh]' />
                     {renderCover()}
                 </div>
-                <h3 className='text-4xl my-4'>{description[locale]}</h3>
-                <div className='flex justify-end text-2xl'>
-                    {renderBooklet()}
-                    {renderPhotos()}
-                    <div className='flex gap-8'>
+                <h3 className='text-2xl lg:text-4xl my-4'>{description[locale]}</h3>
+                <div className='flex flex-col xl:flex-row justify-end text-lg lg:text-2xl'>
+                    <div className='flex gap-1 lg:gap-3 mr-auto'>
+                        {renderBooklet()}
+                        {renderPhotos()}
+                    </div>
+                    <div className='flex gap-4 lg:gap-8'>
                         {renderExternalLinks()}
                         <CopyLink />
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 };
