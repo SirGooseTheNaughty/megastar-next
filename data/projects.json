@@ -12,8 +12,8 @@
       { "app": "web", "link": "https://showopera.com/" }
     ],
     "cover": {
-      "ru": "projects/show_opera.jpg",
-      "en": "projects/show_opera.jpg"
+      "ru": "events/show_opera.jpg",
+      "en": "events/show_opera.jpg"
     },
     "description": { "ru": "Show Opera", "en": "Show Opera" },
     "vid": "show_opera.mp4"
@@ -21,8 +21,8 @@
   {
     "id": "chorus",
     "cover": {
-      "ru": "projects/chorus.jpg",
-      "en": "projects/chorus.jpg"
+      "ru": "events/chorus.jpg",
+      "en": "events/chorus.jpg"
     },
     "description": {
       "ru": "Ансамбль песни и пляски Западного Военного округа",
@@ -36,8 +36,8 @@
   {
     "id": "ballet",
     "cover": {
-      "ru": "projects/ballet.png",
-      "en": "projects/ballet.png"
+      "ru": "events/ballet.png",
+      "en": "events/ballet.png"
     },
     "description": {
       "ru": "Императорский балет Санкт-Петербурга",
@@ -52,8 +52,8 @@
     "id": "ice_opera",
     "albums": [{ "year": "2021", "id": "ice_opera_alb_2021" }],
     "cover": {
-      "ru": "projects/ice_opera.jpg",
-      "en": "projects/ice_opera.jpg"
+      "ru": "events/ice_opera.jpg",
+      "en": "events/ice_opera.jpg"
     },
     "description": { "ru": "Ice Opera", "en": "Ice Opera" },
     "vid": "ice_opera.mp4",
@@ -66,8 +66,8 @@
     "id": "kids_show",
     "albums": [{ "year": "2021", "id": "kids_show_alb_2021" }],
     "cover": {
-      "ru": "projects/kids_show.jpg",
-      "en": "projects/kids_show.jpg"
+      "ru": "events/kids_show.jpg",
+      "en": "events/kids_show.jpg"
     },
     "description": {
       "ru": "Детское шоу на льду @MAZE",

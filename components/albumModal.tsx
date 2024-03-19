@@ -7,6 +7,7 @@ import { EventType, AlbumYear, YEAR, Album } from '@/app/types';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
 import { PhotoModal } from './photoModal';
 import { CloseIcon } from './closeIcon';
+import { MEDIA_PATH } from '@/utils/constants';
 
 export const AlbumModal = ({
     albums = [],
@@ -48,7 +49,7 @@ export const AlbumModalContent = ({
     const closePhoto = () => setOpenedPhotoIndex(null);
 
     const { id, description, files = [] } = data;
-    const photos = files.map((fileName: string) => `${process.env.NEXT_PUBLIC_SRC_PHOTOS}/photos/${year}/${id}/${fileName}`);
+    const photos = files.map((fileName: string) => `${MEDIA_PATH.ROOT}/${MEDIA_PATH.IMAGES}/${MEDIA_PATH.PHOTOS}/${year}/${id}/${fileName}`);
 
     const content = useMemo(() => {
         if (openedPhotoIndex === null) {

@@ -3,10 +3,10 @@ const nextConfig = {
     images: {
       remotePatterns: [
         {
-          protocol: 'http',
-          hostname: 'megastar-group.ru',
+          protocol: process.env.NEXT_PUBLIC_MEDIA_ROOT_PROTOCOL,
+          hostname: process.env.NEXT_PUBLIC_MEDIA_ROOT_URL,
           port: '',
-          pathname: '/images/**',
+          pathname: '/**',
         },
       ],
     },

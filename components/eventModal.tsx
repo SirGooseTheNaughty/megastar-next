@@ -11,6 +11,8 @@ import { CloseIcon } from './closeIcon';
 import { EventType, EventData, ExternalLinkApp } from '@/app/types';
 import Play from '../public/play.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
+import { useAutoFocus } from '@/app/hooks/useAutoFocus';
+import { MEDIA_PATH } from '@/utils/constants';
 
 export const EventModal = ({
     events = [],
@@ -57,10 +59,10 @@ export const EventModalContent = ({
 }) => {
     const { t } = useTranslation();
     const [isPlaying, setIsPlaying] = useState(false);
-    const videoRef = useRef<HTMLVideoElement | null>(null);
     const { description, albums, exlinks, vid, cover, booklet } = data;
 
     useNoScroll();
+    const videoRef = useAutoFocus<HTMLVideoElement>();
 
     useEffect(() => {
         const onPlay = () => setIsPlaying(true);
@@ -75,7 +77,7 @@ export const EventModalContent = ({
             videoElement?.addEventListener('play', onPlay);
             videoElement?.addEventListener('pause', onPause);
         }
-    }, []);
+    }, [videoRef]);
 
     const play = () => {
         videoRef.current?.play?.()?.catch?.();
@@ -91,7 +93,7 @@ export const EventModalContent = ({
         return (
             <div className='absolute top-0 left-0 w-full h-full'>
                 <Image
-                    src={`${process.env.NEXT_PUBLIC_SRC_PHOTOS}/${coverUrl}`}
+                    src={`${MEDIA_PATH.ROOT}/${MEDIA_PATH.IMAGES}/${coverUrl}`}
                     width={1200}
                     height={800}
                     alt='close icon'
@@ -148,7 +150,7 @@ export const EventModalContent = ({
         return (
             <div className='flex items-center gap-2 mr-4'>
                 <p className='capitalize'>{t('booklet')}:</p>
-                <ExternalLink app={ExternalLinkApp.BOOKLET} link={`${process.env.NEXT_PUBLIC_SRC_BOOKLETS}/${booklet[locale]}`} />
+                <ExternalLink app={ExternalLinkApp.BOOKLET} link={`${MEDIA_PATH.ROOT}/${MEDIA_PATH.BOOKLETS}/${booklet[locale]}`} />
             </div>
         );
     };
@@ -158,7 +160,12 @@ export const EventModalContent = ({
             <div className='relative bg-lightblue w-11/12 lg:w-10/12 mx-auto p-6 lg:px-16 lg:py-12'>
                 <CloseIcon />
                 <div className='relative'>
-                    <video controls src={`${process.env.NEXT_PUBLIC_SRC_VIDEOS}/${vid}`} ref={videoRef} className='w-full h-60vh max-h-[70vh]' />
+                    <video
+                        controls
+                        src={`${MEDIA_PATH.ROOT}/${MEDIA_PATH.VIDEOS}/${vid}`}
+                        ref={videoRef}
+                        className='w-full h-60vh max-h-[70vh] outline-1 outline focus:outline-purple'
+                    />
                     {renderCover()}
                 </div>
                 <h3 className='text-2xl lg:text-4xl my-4'>{description[locale]}</h3>

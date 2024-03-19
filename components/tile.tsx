@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { EventType } from "@/app/types";
 import cn from "classnames";
+import { MEDIA_PATH } from "@/utils/constants";
 
 export const Tile = (
     {
@@ -26,7 +27,13 @@ export const Tile = (
     return (
         <Link href={link} scroll={false} className="flex relative w-full md:w-[49%] xl:w-[32%] aspect-4/3 cursor-pointer skeleton-animation">
             {image && (
-                <Image src={`${process.env.NEXT_PUBLIC_SRC_PHOTOS}/${image}`} alt={title} width={400} height={300} className="absolute w-full h-full object-cover" />
+                <Image
+                    src={`${MEDIA_PATH.ROOT}/${MEDIA_PATH.IMAGES}/${image}`}
+                    alt={title}
+                    width={400}
+                    height={300}
+                    className="absolute w-full h-full object-cover"
+                />
             )}
             <div
                 className={cn(

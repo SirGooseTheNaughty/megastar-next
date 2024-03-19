@@ -5,6 +5,7 @@ import cn from 'classnames';
 import { Grid } from "./grid";
 import { Tile } from "./tile";
 import { AlbumYear, EventType, YEAR_EVENT } from "@/app/types";
+import { MEDIA_PATH } from "@/utils/constants";
 
 export const Photos = ({ albums = [], locale }: { albums: AlbumYear[], locale: string }) => {
     const [year, setYear] = useState(albums?.[0].year);
@@ -39,7 +40,7 @@ export const Photos = ({ albums = [], locale }: { albums: AlbumYear[], locale: s
             </div>
             <Grid>
                 {activeYearAlbums.map(({ id, description, date, cover }) => (
-                    <Tile key={id} id={id} type={EventType.ALBUM} year={year} title={description[locale]} text={date[locale]} image={cover} noHover />
+                    <Tile key={id} id={id} type={EventType.ALBUM} year={year} title={description[locale]} text={date[locale]} image={`${MEDIA_PATH.PHOTOS}/${cover}`} noHover />
                 ))}
             </Grid>
         </div>

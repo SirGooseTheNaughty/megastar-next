@@ -125,8 +125,8 @@
     ],
     "exlinks": [{ "app": "vk", "link": "https://vk.com/idjazz_spb2021" }],
     "cover": {
-      "ru": "others/idJazz.jpg",
-      "en": "others/idJazz.jpg"
+      "ru": "events/idJazz.jpg",
+      "en": "events/idJazz.jpg"
     },
     "description": { "ru": "IDJazz Spb", "en": "IDJazz Spb" },
     "date": { "ru": "15-17 июля", "en": "July, 15-17" },
@@ -140,8 +140,8 @@
     ],
     "exlinks": [{ "app": "vk", "link": "https://vk.com/theremin_fest" }],
     "cover": {
-      "ru": "others/theremin.jpg",
-      "en": "others/theremin.jpg"
+      "ru": "events/theremin.jpg",
+      "en": "events/theremin.jpg"
     },
     "description": { "ru": "Theremin Fest", "en": "Theremin Fest" },
     "date": { "ru": "8 и 9 октября", "en": "October, 8 and 9" },
