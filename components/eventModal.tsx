@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, RefObject, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
@@ -12,6 +12,7 @@ import { EventType, EventData, ExternalLinkApp } from '@/app/types';
 import Play from '../public/play.svg';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
 import { useAutoFocus } from '@/app/hooks/useAutoFocus';
+import { useDirectClick } from '@/app/hooks/useDirectClick';
 import { MEDIA_PATH } from '@/utils/constants';
 
 export const EventModal = ({
@@ -59,10 +60,11 @@ export const EventModalContent = ({
 }) => {
     const { t } = useTranslation();
     const [isPlaying, setIsPlaying] = useState(false);
-    const { description, albums, exlinks, vid, cover, booklet } = data;
+    const { id: eventId, description, albums, exlinks, vid, cover, booklet } = data;
 
     useNoScroll();
     const videoRef = useAutoFocus<HTMLVideoElement>();
+    const ref = useDirectClick();
 
     useEffect(() => {
         const onPlay = () => setIsPlaying(true);
@@ -79,9 +81,9 @@ export const EventModalContent = ({
         }
     }, [videoRef]);
 
-    const play = () => {
+    const play = useCallback(() => {    
         videoRef.current?.play?.()?.catch?.();
-    };
+    }, [videoRef]);
 
     const renderCover = () => {
         if (isPlaying) {
@@ -116,13 +118,13 @@ export const EventModalContent = ({
         }
 
         return (
-            <div className='flex gap-2 lg:gap-3'>
+            <div className='flex gap-x-2 lg:gap-x-3 flex-wrap md:flex-nowrap'>
                 <div className='capitalize'>{t('photos')}:</div>
-                {albums.map(({ year, label, id: albumId }) => (
+                {albums.map(({ year, label, id: albumId = eventId }) => (
                     <Link
-                        key={albumId}
+                        key={`${year}-${albumId}`}
                         href={`?year=${year}&${EventType.ALBUM}=${albumId}`}
-                        className='underline truncate max-w-24 lg:max-w-none'
+                        className='underline'
                     >{label?.[locale] || year}</Link>
                 ))}
             </div>
@@ -156,7 +158,10 @@ export const EventModalContent = ({
     };
 
     return (
-        <div className='modal fixed top-0 left-0 w-full h-full grid items-center bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'>
+        <div
+            ref={ref as RefObject<HTMLDivElement>}
+            className='modal fixed top-0 left-0 w-full h-full grid items-center bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'
+        >
             <div className='relative bg-lightblue w-11/12 lg:w-10/12 mx-auto p-6 lg:px-16 lg:py-12'>
                 <CloseIcon />
                 <div className='relative'>
@@ -164,7 +169,7 @@ export const EventModalContent = ({
                         controls
                         src={`${MEDIA_PATH.ROOT}/${MEDIA_PATH.VIDEOS}/${vid}`}
                         ref={videoRef}
-                        className='w-full h-60vh max-h-[70vh] outline-1 outline focus:outline-purple'
+                        className='w-full h-60vh max-h-[70vh]       '
                     />
                     {renderCover()}
                 </div>

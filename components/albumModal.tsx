@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, RefObject } from 'react';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { EventType, AlbumYear, YEAR, Album } from '@/app/types';
 import { useNoScroll } from '@/app/hooks/useNoScroll';
+import { useDirectClick } from '@/app/hooks/useDirectClick';
 import { PhotoModal } from './photoModal';
 import { CloseIcon } from './closeIcon';
 import { MEDIA_PATH } from '@/utils/constants';
@@ -48,13 +49,16 @@ export const AlbumModalContent = ({
     const [openedPhotoIndex, setOpenedPhotoIndex] = useState<number | null>(null);
     const closePhoto = () => setOpenedPhotoIndex(null);
 
+    const albumRef = useDirectClick();
+    const photoModalRef = useDirectClick(closePhoto);
+
     const { id, description, files = [] } = data;
     const photos = files.map((fileName: string) => `${MEDIA_PATH.ROOT}/${MEDIA_PATH.IMAGES}/${MEDIA_PATH.PHOTOS}/${year}/${id}/${fileName}`);
 
     const content = useMemo(() => {
         if (openedPhotoIndex === null) {
             return (
-                <div className='relative bg-lightblue w-10/12 mx-auto px-16 py-12'>
+                <div className='relative bg-lightblue w-10/12 mx-auto px-4 lg:px-16 py-3 lg:py-12'>
                     <CloseIcon />
                     <h3 className='text-3xl'>{description[locale]} | {year}</h3>
                     <div className="flex flex-wrap justify-center gap-x-[2%] gap-y-8 py-10">
@@ -78,12 +82,17 @@ export const AlbumModalContent = ({
             )
         }
         return (
-            <PhotoModal photos={photos} initialIndex={openedPhotoIndex as number} closePhoto={closePhoto} />
+            <div className="h-full grid place-items-center -translate-y-8 lg:translate-y-0" ref={photoModalRef as RefObject<HTMLDivElement>}>
+                <PhotoModal photos={photos} initialIndex={openedPhotoIndex as number} closePhoto={closePhoto} />
+            </div>
         );
-    }, [openedPhotoIndex, photos, year, description, locale]);
+    }, [openedPhotoIndex, photos, year, description, locale, photoModalRef]);
 
     return (
-        <div className='modal fixed top-0 left-0 w-full h-full overflow-y-auto py-20 bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'>
+        <div
+            ref={albumRef as RefObject<HTMLDivElement>}
+            className='modal fixed top-0 left-0 w-full h-full overflow-y-auto py-20 bg-lightblue bg-opacity-50 z-40 backdrop-blur-md'
+        >
             {content}
         </div>
     );

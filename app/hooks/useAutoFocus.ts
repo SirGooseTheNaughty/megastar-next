@@ -7,7 +7,6 @@ export const useAutoFocus = <T extends HTMLElement>() => {
 
     useEffect(() => {
         ref.current?.focus?.();
-        console.log(ref.current);
     }, [ref]);
 
     return ref;

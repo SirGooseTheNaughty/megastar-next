@@ -9,7 +9,7 @@ export const YEAR = 'year';
 
 export type AlbumLink = {
     year: string,
-    id: string,
+    id?: string,
     label?: Localized,
 };
 

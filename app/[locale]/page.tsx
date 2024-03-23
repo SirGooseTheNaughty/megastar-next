@@ -43,13 +43,13 @@ export default async function Home({ params: { locale }}: any) {
         <Heading id='events' t={t} />
         <Grid>
           {events.map(({ id, description, date, cover }) => (
-            <Tile key={id} id={id} type={EventType.EVENT} title={description[locale]} text={date?.[locale]} image={cover?.[locale]} />
+            <Tile key={`event-${id}`} id={id} type={EventType.EVENT} title={description[locale]} text={date?.[locale]} image={cover?.[locale]} />
           ))}
         </Grid>
         <Heading id='projects' t={t} />
         <Grid>
           {projects.map(({ id, description, cover }) => (
-            <Tile key={id} id={id} type={EventType.PROJECT} title={description[locale]} image={cover?.[locale]} />
+            <Tile key={`project-${id}`} id={id} type={EventType.PROJECT} title={description[locale]} image={cover?.[locale]} />
           ))}
         </Grid>
         <Heading id='photos' t={t} />
@@ -57,7 +57,7 @@ export default async function Home({ params: { locale }}: any) {
         <Heading id='videos' t={t} />
         <Grid>
           {videos.map(({ id, description, cover }) => (
-            <Tile key={id} id={id} type={EventType.VIDEO} title={description[locale]} image={cover} />
+            <Tile key={`video-${id}`} id={id} type={EventType.VIDEO} title={description[locale]} image={cover} />
           ))}
         </Grid>
         <Heading id='contacts' t={t} />

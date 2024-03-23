@@ -1411,8 +1411,8 @@
         ]
       },
       {
-        "id": "wonder_of_light_alb_tus",
-        "src": "2019/wonder_of_light_alb_tus",
+        "id": "wonder_of_light_tus",
+        "src": "2019/wonder_of_light_tus",
         "cover": "2019/4_album.png",
         "description": {
           "ru": "«Чудо Света» ТЮЗ",
@@ -1567,8 +1567,8 @@
         ]
       },
       {
-        "id": "wonder_of_light_alb_palace",
-        "src": "2019/wonder_of_light_alb_palace",
+        "id": "wonder_of_light_palace",
+        "src": "2019/wonder_of_light_palace",
         "cover": "2019/9_album.png",
         "description": {
           "ru": "«Чудо Света» Дворцовая площадь",

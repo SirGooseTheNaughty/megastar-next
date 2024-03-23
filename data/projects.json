@@ -2,10 +2,10 @@
   {
     "id": "show_opera",
     "albums": [
-      { "year": "2020", "id": "show_opera_alb_2020" },
-      { "year": "2019", "id": "show_opera_alb_2019" },
-      { "year": "2018", "id": "show_opera_alb_2018" },
-      { "year": "2017", "id": "show_opera_alb_2017" }
+      { "year": "2020" },
+      { "year": "2019" },
+      { "year": "2018" },
+      { "year": "2017" }
     ],
     "exlinks": [
       { "app": "vk", "link": "https://vk.com/show_opera" },
